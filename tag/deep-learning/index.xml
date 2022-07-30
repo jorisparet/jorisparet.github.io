@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Deep Learning | Joris Paret</title>
+    <link>https://jorisparet.github.io/tag/deep-learning/</link>
+      <atom:link href="https://jorisparet.github.io/tag/deep-learning/index.xml" rel="self" type="application/rss+xml" />
+    <description>Deep Learning</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 29 May 2022 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://jorisparet.github.io/media/icon_hu3286c80c0c8c5a3288a363fff1c21738_1117_512x512_fill_lanczos_center_3.png</url>
+      <title>Deep Learning</title>
+      <link>https://jorisparet.github.io/tag/deep-learning/</link>
+    </image>
+    
+    <item>
+      <title>hamoco</title>
+      <link>https://jorisparet.github.io/project/hamoco/</link>
+      <pubDate>Sun, 29 May 2022 00:00:00 +0000</pubDate>
+      <guid>https://jorisparet.github.io/project/hamoco/</guid>
+      <description>&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34;
+           src=&#34;https://jorisparet.github.io/project/hamoco/logo.svg&#34;
+           loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;hamoco&lt;/strong&gt; (&lt;em&gt;handy mouse controller&lt;/em&gt;) is a python application that allows you to control your mouse from your webcam using various hand gestures. You have a laptop equiped with a webcam? Well, good news, that&amp;rsquo;s all you need to feel like Tom Cruise in &lt;a href=&#34;https://en.wikipedia.org/wiki/Minority_Report_%28film%29&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Minority Report&lt;/a&gt;! Kind of.&lt;/p&gt;
+&lt;h3 id=&#34;demonstration&#34;&gt;Demonstration&lt;/h3&gt;
+&lt;p&gt;In the example below, the hand is used to move the pointer, open a file by double-clicking on it, scroll through it, select a paragraph and cut it. The file is then dragged and dropped into a folder.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://raw.githubusercontent.com/jorisparet/hamoco/main/images/demo.gif&#34; alt=&#34;&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;h3 id=&#34;how-does-it-work&#34;&gt;How does it work?&lt;/h3&gt;
+&lt;p&gt;By using the power of &lt;a href=&#34;https://pypi.org/project/PyAutoGUI/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;PyAutoGUI&lt;/a&gt; to control the mouse, &lt;a href=&#34;https://pypi.org/project/opencv-python/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;openCV&lt;/a&gt; to process the video feed, and &lt;a href=&#34;https://google.github.io/mediapipe/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;MediaPipe&lt;/a&gt; to track hands, &lt;strong&gt;hamoco&lt;/strong&gt; predicts the nature of a hand pose in real-time thanks to a neural network and uses it to perform various kinds of mouse pointer actions.&lt;/p&gt;
+&lt;h2 id=&#34;installation&#34;&gt;Installation&lt;/h2&gt;
+&lt;hr&gt;
+&lt;p&gt;From the &lt;a href=&#34;https://github.com/jorisparet/hamoco&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;code repository&lt;/a&gt;:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git clone https://github.com/jorisparet/hamoco
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;cd hamoco
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;pip install -r requirements.txt
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;pip install .
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;em&gt;The package will be published on &lt;a href=&#34;https://pypi.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;PyPI&lt;/a&gt; at a later stage of development.&lt;/em&gt;&lt;/p&gt;
+&lt;h3 id=&#34;requirements&#34;&gt;Requirements:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://pypi.org/project/PyAutoGUI/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;PyAutoGUI&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://pypi.org/project/numpy/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;NumPy&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://pypi.org/project/opencv-python/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;openCV&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://google.github.io/mediapipe/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;MediaPipe&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.tensorflow.org&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;TensorFlow&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;quick-start&#34;&gt;Quick start&lt;/h2&gt;
+&lt;hr&gt;
+&lt;p&gt;After the installation, the package should have copied three binaries in the &lt;code&gt;.local/bin/&lt;/code&gt; folder of your home directory:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;hamoco-run&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;hamoco-data&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;hamoco-train&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;(&lt;em&gt;Make sure this location is included in your &lt;code&gt;$PATH&lt;/code&gt; environment variable&lt;/em&gt;)&lt;/p&gt;
+&lt;p&gt;Run these applications directly in the terminal, &lt;em&gt;e.g.&lt;/em&gt; &lt;code&gt;hamoco-run --sensitivity 0.5 --show&lt;/code&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;hamoco-run&#34;&gt;hamoco-run&lt;/h3&gt;
+&lt;p&gt;&lt;em&gt;hamoco-run&lt;/em&gt; is the &lt;strong&gt;main application&lt;/strong&gt;. It activates the webcam and allows to use hand gestures to take control of the mouse pointer. Several basic actions can then be performed, such as &lt;em&gt;left click&lt;/em&gt;, &lt;em&gt;right click&lt;/em&gt;, &lt;em&gt;drag and drop&lt;/em&gt; and &lt;em&gt;scrolling&lt;/em&gt;. Various settings can be adjusted to customize the hand controller to your liking, such as the global sensivitity and parameters for motion smoothing. Type &lt;code&gt;--help&lt;/code&gt; for more information on the available options.&lt;/p&gt;
+&lt;p&gt;Examples:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;hamoco-run --sensitivity 0.4 --scrolling_threshold 0.2&lt;/code&gt; : adapts the sensitivity and sets a custom threshold value to trigger scrolling motions.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;hamoco-run --min_cutoff_filter 0.05 --show&lt;/code&gt; : sets a custom value for the cutoff frequency used for motion smoothing and opens a window that shows the processed video feed in real-time.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;hamoco-run --scrolling_speed 20&lt;/code&gt; : sets a custom value for the scrolling speed. Note that for a given value, results may differ significantly depending on the operating system.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Hand poses &amp;amp; Mouse actions:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;OPEN&lt;/code&gt; : the pointer is free and follows the center of the palm (indicated by the white empty square) ;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;CLOSE&lt;/code&gt; : the pointer stops all actions ;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;INDEX_UP&lt;/code&gt; : performs a left-click at the current pointer location. Execute twice rapidly for a double-click ;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;PINKY_UP&lt;/code&gt; : performs a right click at the current pointer location ;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;INDEX_MIDDLE_UP&lt;/code&gt; : holds the left mouse button down and moves the pointer by following the center of the palm. This is used for selection and drag &amp;amp; drop ;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;THUMB_SIDE&lt;/code&gt; : enables vertical scrolling using the first triggering location as origin. Scrolling up or down is done by moving the hand up or down relative to the origin while keeping the same hand pose ;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The various hand poses are illustrated below:&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://raw.githubusercontent.com/jorisparet/hamoco/main/images/hand_poses.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;h3 id=&#34;hamoco-data&#34;&gt;hamoco-data&lt;/h3&gt;
+&lt;p&gt;&lt;em&gt;hamoco-data&lt;/em&gt; activates the webcam and allows to record your own labeled data for hand poses in order to train a custom NN-based classification model for the main application. This model can then be used in place of the one provided by default and will be more performant, as it will be trained on your personal and natural hand poses (see &lt;em&gt;&lt;a href=&#34;#hamoco-train&#34;&gt;hamoco-train&lt;/a&gt;&lt;/em&gt;). Type &lt;code&gt;--help&lt;/code&gt; for more information on the available options.&lt;/p&gt;
+&lt;p&gt;This application requires two arguments:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;pose&lt;/code&gt;: a string that indicates the type of hand pose you intend to record. It should be one of {&lt;em&gt;OPEN, CLOSE, INDEX_UP, PINKY_UP, THUMB_SIDE, INDEX_MIDDLE_UP&lt;/em&gt;}.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;path_to_data&lt;/code&gt;: path to the folder inside of which you want the recorded data to be saved.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Examples:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;hamoco-data OPEN data/ --delay 1.0&lt;/code&gt; : starts the recording for the &lt;em&gt;OPEN&lt;/em&gt; hand pose, stores the resulting data in the &lt;code&gt;data&lt;/code&gt; folder (provided it exists!), and takes a new snapshot every second.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;hamoco-data INDEX_UP data/ --delay 0.25 --images&lt;/code&gt; : starts the recording for the &lt;em&gt;INDEX_UP&lt;/em&gt; hand pose, stores the resulting data in the &lt;code&gt;data&lt;/code&gt; folder, takes a new snapshot every 0.25s, and saves the images (in addition to the numeric data file used for training the model). Saving images can be useful if you want to manually check if your hand was in a correct position when its numerical data was recorded, and hence keep or remove specific data files accordingly.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;hamoco-train&#34;&gt;hamoco-train&lt;/h3&gt;
+&lt;p&gt;Provided a path to a directory with compatible data, &lt;em&gt;hamoco-train&lt;/em&gt; trains a customizable NN-based classification model to predict a hand pose. This classification model can then be used in the main application in place of the one provided by default. Type &lt;code&gt;--help&lt;/code&gt; for more information on the available options.&lt;/p&gt;
+&lt;p&gt;This application requires two arguments:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;path_to_model&lt;/code&gt; : path to save the newly trained model.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;path_to_data&lt;/code&gt; : path to the data folder to use to train the model (see &lt;em&gt;&lt;a href=&#34;#hamoco-data&#34;&gt;hamoco-data&lt;/a&gt;&lt;/em&gt;).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Examples:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;hamoco-train my_custom_model.h5 data/ --hiden_layers 50 25 --epochs 20&lt;/code&gt; : trains and save a model named &lt;code&gt;my_custom_model.h5&lt;/code&gt; that contains two hidden layers (with dimensions 50 and 25 respectively) over 20 epochs, by using the compatible data in the &lt;code&gt;data&lt;/code&gt; folder.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;hamoco-train my_custom_model.h5 data/ --epochs 10 --learning_rate 0.1&lt;/code&gt; : trains and save a model named &lt;code&gt;my_custom_model.h5&lt;/code&gt; with default dimensions over 20 epochs and with a learning rate of 0.1, by using the compatible data in the &lt;code&gt;data&lt;/code&gt; folder.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Your model can then be used in the main application with the &lt;code&gt;--model&lt;/code&gt; flag of &lt;em&gt;&lt;a href=&#34;#hamoco-run&#34;&gt;hamoco-run&lt;/a&gt;&lt;/em&gt;, &lt;em&gt;e.g.&lt;/em&gt; &lt;code&gt;hamoco-run --model &amp;lt;path_to_your_model&amp;gt;&lt;/code&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;author&#34;&gt;Author&lt;/h2&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;a href=&#34;https://jorisparet.github.io&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Joris Paret&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

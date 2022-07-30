@@ -1,0 +1,1423 @@
+<!DOCTYPE html><html lang="en-us" >
+
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  
+  
+    <meta name="generator" content="Wowchemy 5.6.0 for Hugo" />
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
+
+  
+  
+  
+    
+      
+      <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=B612+Mono&family=B612:wght@400;700&family=Jura:wght@400;700&display=swap">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=B612+Mono&family=B612:wght@400;700&family=Jura:wght@400;700&display=swap" media="print" onload="this.media='all'">
+    
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Joris Paret" />
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Real-time mouse control via webcam-recorded hand gestures." />
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://jorisparet.github.io/project/hamoco/" />
+
+  
+  
+  
+    <meta name="theme-color" content="#1565c0" />
+  
+
+  
+  
+    
+    <script src="/js/mathjax-config.js"></script>
+  
+
+  
+
+  <link rel="stylesheet" href="/css/vendor-bundle.min.c7b8d9abd591ba2253ea42747e3ac3f5.css" media="print" onload="this.media='all'">
+
+  
+  
+  
+    
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css" integrity="sha512-W0xM4mr6dEP9nREo7Z9z+9X70wytKvMGeDsj7ps2+xg5QPrEBXC8tAW1IFnzjR6eoJ90JmCnFzerQJTLzIEHjA==" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+    
+    
+    
+      
+      
+    
+    
+    
+
+    
+    
+    
+
+    
+
+    
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+  
+
+  
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.48a6494934db69bd1da4ac196df00ed2.css" />
+
+  
+  
+  
+  
+  
+  
+  
+    
+    
+    <link rel="stylesheet" href="/css/libs/chroma/github-light.min.css" title="hl-light" media="print" onload="this.media='all'" >
+    <link rel="stylesheet" href="/css/libs/chroma/dracula.min.css" title="hl-dark" media="print" onload="this.media='all'" disabled>
+  
+
+  
+  
+
+
+
+  
+
+
+  
+
+
+  
+
+
+
+
+  
+  
+  
+
+  
+  
+
+  
+  
+    <link rel="manifest" href="/manifest.webmanifest" />
+  
+
+  
+  <link rel="icon" type="image/png" href="/media/icon_hu3286c80c0c8c5a3288a363fff1c21738_1117_32x32_fill_lanczos_center_3.png" />
+  <link rel="apple-touch-icon" type="image/png" href="/media/icon_hu3286c80c0c8c5a3288a363fff1c21738_1117_180x180_fill_lanczos_center_3.png" />
+
+  <link rel="canonical" href="https://jorisparet.github.io/project/hamoco/" />
+
+  
+  
+  
+  
+  
+  
+  
+  
+    
+    
+  
+  
+
+  
+  
+    
+    
+  
+  <meta property="twitter:card" content="summary" />
+  
+  <meta property="og:site_name" content="Joris Paret" />
+  <meta property="og:url" content="https://jorisparet.github.io/project/hamoco/" />
+  <meta property="og:title" content="hamoco | Joris Paret" />
+  <meta property="og:description" content="Real-time mouse control via webcam-recorded hand gestures." /><meta property="og:image" content="https://jorisparet.github.io/media/icon_hu3286c80c0c8c5a3288a363fff1c21738_1117_512x512_fill_lanczos_center_3.png" />
+    <meta property="twitter:image" content="https://jorisparet.github.io/media/icon_hu3286c80c0c8c5a3288a363fff1c21738_1117_512x512_fill_lanczos_center_3.png" /><meta property="og:locale" content="en-us" />
+  
+    
+      <meta
+        property="article:published_time"
+        content="2022-05-29T00:00:00&#43;00:00"
+      />
+    
+    <meta property="article:modified_time" content="2022-07-30T18:50:30&#43;02:00">
+  
+
+  
+
+
+    
+
+
+
+
+
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://jorisparet.github.io/project/hamoco/"
+  },
+  "headline": "hamoco",
+  
+  "datePublished": "2022-05-29T00:00:00Z",
+  "dateModified": "2022-07-30T18:50:30+02:00",
+  
+  "author": {
+    "@type": "Person",
+    "name": "Joris Paret"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "Joris Paret",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://jorisparet.github.io/media/icon_hu3286c80c0c8c5a3288a363fff1c21738_1117_192x192_fill_lanczos_center_3.png"
+    }
+  },
+  "description": "Real-time mouse control via webcam-recorded hand gestures."
+}
+</script>
+
+  
+
+  
+
+  
+
+
+  <title>hamoco | Joris Paret</title>
+
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="4a0ed2b62b9aab726957c481e10d2203" >
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.min.613040fe4f2c0f007b4dcb64404201cb.js"></script>
+
+  
+
+
+<aside class="search-modal" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
+        aria-label="Search...">
+        
+      </div>
+
+      
+      
+
+      
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+
+  <div class="page-header">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+<header class="header--fixed">
+  <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+    <div class="container-xl">
+
+      
+      <div class="d-none d-lg-inline-flex">
+        <a class="navbar-brand" href="/">Joris Paret</a>
+      </div>
+      
+
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+      <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+      
+      <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+        <a class="navbar-brand" href="/">Joris Paret</a>
+      </div>
+      
+
+      
+      
+      <div class="navbar-collapse main-menu-item collapse justify-content-center" id="navbar-content">
+
+        
+        <ul class="navbar-nav d-md-inline-flex">
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#about"><span>Home</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#experience"><span>Experience</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#publications"><span>Publications</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#projects"><span>Projects</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#contact"><span>Contact</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/uploads/resume.pdf"><span>CV</span></a>
+          </li>
+
+          
+          
+
+        
+
+          
+        </ul>
+      </div>
+
+      <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+        
+        
+          
+        
+
+        
+        
+
+        
+        
+        
+        <li class="nav-item dropdown theme-dropdown">
+          <a href="#" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-label="Display preferences">
+            <i class="fas fa-moon" aria-hidden="true"></i>
+          </a>
+          <div class="dropdown-menu">
+            <a href="#" class="dropdown-item js-set-theme-light">
+              <span>Light</span>
+            </a>
+            <a href="#" class="dropdown-item js-set-theme-dark">
+              <span>Dark</span>
+            </a>
+            <a href="#" class="dropdown-item js-set-theme-auto">
+              <span>Automatic</span>
+            </a>
+          </div>
+        </li>
+        
+
+        
+        
+
+      </ul>
+
+    </div>
+  </nav>
+</header>
+
+
+  </div>
+
+  <div class="page-body">
+    
+    
+    
+
+    <article class="article article-project">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1>hamoco</h1>
+
+  
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+          Last updated on
+      
+    
+    Jul 30, 2022
+  </span>
+  
+
+  
+
+  
+
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+    
+
+
+
+
+<div class="btn-links mb-3">
+  
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+  
+  <a class="btn btn-outline-primary btn-page-header" href="https://github.com/jorisparet/hamoco" target="_blank" rel="noopener">
+    <i class="fab fa-github mr-1"></i>GitHub</a>
+
+
+</div>
+
+
+  
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+      <p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt=""
+           src="/project/hamoco/logo.svg"
+           loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p><strong>hamoco</strong> (<em>handy mouse controller</em>) is a python application that allows you to control your mouse from your webcam using various hand gestures. You have a laptop equiped with a webcam? Well, good news, that&rsquo;s all you need to feel like Tom Cruise in <a href="https://en.wikipedia.org/wiki/Minority_Report_%28film%29" target="_blank" rel="noopener">Minority Report</a>! Kind of.</p>
+<h3 id="demonstration">Demonstration</h3>
+<p>In the example below, the hand is used to move the pointer, open a file by double-clicking on it, scroll through it, select a paragraph and cut it. The file is then dragged and dropped into a folder.</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="https://raw.githubusercontent.com/jorisparet/hamoco/main/images/demo.gif" alt="" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<h3 id="how-does-it-work">How does it work?</h3>
+<p>By using the power of <a href="https://pypi.org/project/PyAutoGUI/" target="_blank" rel="noopener">PyAutoGUI</a> to control the mouse, <a href="https://pypi.org/project/opencv-python/" target="_blank" rel="noopener">openCV</a> to process the video feed, and <a href="https://google.github.io/mediapipe/" target="_blank" rel="noopener">MediaPipe</a> to track hands, <strong>hamoco</strong> predicts the nature of a hand pose in real-time thanks to a neural network and uses it to perform various kinds of mouse pointer actions.</p>
+<h2 id="installation">Installation</h2>
+<hr>
+<p>From the <a href="https://github.com/jorisparet/hamoco" target="_blank" rel="noopener">code repository</a>:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">git clone https://github.com/jorisparet/hamoco
+</span></span><span class="line"><span class="cl">cd hamoco
+</span></span><span class="line"><span class="cl">pip install -r requirements.txt
+</span></span><span class="line"><span class="cl">pip install .
+</span></span></code></pre></div><p><em>The package will be published on <a href="https://pypi.org/" target="_blank" rel="noopener">PyPI</a> at a later stage of development.</em></p>
+<h3 id="requirements">Requirements:</h3>
+<ul>
+<li><a href="https://pypi.org/project/PyAutoGUI/" target="_blank" rel="noopener">PyAutoGUI</a></li>
+<li><a href="https://pypi.org/project/numpy/" target="_blank" rel="noopener">NumPy</a></li>
+<li><a href="https://pypi.org/project/opencv-python/" target="_blank" rel="noopener">openCV</a></li>
+<li><a href="https://google.github.io/mediapipe/" target="_blank" rel="noopener">MediaPipe</a></li>
+<li><a href="https://www.tensorflow.org" target="_blank" rel="noopener">TensorFlow</a></li>
+</ul>
+<h2 id="quick-start">Quick start</h2>
+<hr>
+<p>After the installation, the package should have copied three binaries in the <code>.local/bin/</code> folder of your home directory:</p>
+<ol>
+<li><code>hamoco-run</code></li>
+<li><code>hamoco-data</code></li>
+<li><code>hamoco-train</code></li>
+</ol>
+<p>(<em>Make sure this location is included in your <code>$PATH</code> environment variable</em>)</p>
+<p>Run these applications directly in the terminal, <em>e.g.</em> <code>hamoco-run --sensitivity 0.5 --show</code>.</p>
+<h3 id="hamoco-run">hamoco-run</h3>
+<p><em>hamoco-run</em> is the <strong>main application</strong>. It activates the webcam and allows to use hand gestures to take control of the mouse pointer. Several basic actions can then be performed, such as <em>left click</em>, <em>right click</em>, <em>drag and drop</em> and <em>scrolling</em>. Various settings can be adjusted to customize the hand controller to your liking, such as the global sensivitity and parameters for motion smoothing. Type <code>--help</code> for more information on the available options.</p>
+<p>Examples:</p>
+<ul>
+<li><code>hamoco-run --sensitivity 0.4 --scrolling_threshold 0.2</code> : adapts the sensitivity and sets a custom threshold value to trigger scrolling motions.</li>
+<li><code>hamoco-run --min_cutoff_filter 0.05 --show</code> : sets a custom value for the cutoff frequency used for motion smoothing and opens a window that shows the processed video feed in real-time.</li>
+<li><code>hamoco-run --scrolling_speed 20</code> : sets a custom value for the scrolling speed. Note that for a given value, results may differ significantly depending on the operating system.</li>
+</ul>
+<p><strong>Hand poses &amp; Mouse actions:</strong></p>
+<ul>
+<li><code>OPEN</code> : the pointer is free and follows the center of the palm (indicated by the white empty square) ;</li>
+<li><code>CLOSE</code> : the pointer stops all actions ;</li>
+<li><code>INDEX_UP</code> : performs a left-click at the current pointer location. Execute twice rapidly for a double-click ;</li>
+<li><code>PINKY_UP</code> : performs a right click at the current pointer location ;</li>
+<li><code>INDEX_MIDDLE_UP</code> : holds the left mouse button down and moves the pointer by following the center of the palm. This is used for selection and drag &amp; drop ;</li>
+<li><code>THUMB_SIDE</code> : enables vertical scrolling using the first triggering location as origin. Scrolling up or down is done by moving the hand up or down relative to the origin while keeping the same hand pose ;</li>
+</ul>
+<p>The various hand poses are illustrated below:</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="https://raw.githubusercontent.com/jorisparet/hamoco/main/images/hand_poses.png" alt="" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<h3 id="hamoco-data">hamoco-data</h3>
+<p><em>hamoco-data</em> activates the webcam and allows to record your own labeled data for hand poses in order to train a custom NN-based classification model for the main application. This model can then be used in place of the one provided by default and will be more performant, as it will be trained on your personal and natural hand poses (see <em><a href="#hamoco-train">hamoco-train</a></em>). Type <code>--help</code> for more information on the available options.</p>
+<p>This application requires two arguments:</p>
+<ul>
+<li><code>pose</code>: a string that indicates the type of hand pose you intend to record. It should be one of {<em>OPEN, CLOSE, INDEX_UP, PINKY_UP, THUMB_SIDE, INDEX_MIDDLE_UP</em>}.</li>
+<li><code>path_to_data</code>: path to the folder inside of which you want the recorded data to be saved.</li>
+</ul>
+<p>Examples:</p>
+<ul>
+<li><code>hamoco-data OPEN data/ --delay 1.0</code> : starts the recording for the <em>OPEN</em> hand pose, stores the resulting data in the <code>data</code> folder (provided it exists!), and takes a new snapshot every second.</li>
+<li><code>hamoco-data INDEX_UP data/ --delay 0.25 --images</code> : starts the recording for the <em>INDEX_UP</em> hand pose, stores the resulting data in the <code>data</code> folder, takes a new snapshot every 0.25s, and saves the images (in addition to the numeric data file used for training the model). Saving images can be useful if you want to manually check if your hand was in a correct position when its numerical data was recorded, and hence keep or remove specific data files accordingly.</li>
+</ul>
+<h3 id="hamoco-train">hamoco-train</h3>
+<p>Provided a path to a directory with compatible data, <em>hamoco-train</em> trains a customizable NN-based classification model to predict a hand pose. This classification model can then be used in the main application in place of the one provided by default. Type <code>--help</code> for more information on the available options.</p>
+<p>This application requires two arguments:</p>
+<ul>
+<li><code>path_to_model</code> : path to save the newly trained model.</li>
+<li><code>path_to_data</code> : path to the data folder to use to train the model (see <em><a href="#hamoco-data">hamoco-data</a></em>).</li>
+</ul>
+<p>Examples:</p>
+<ul>
+<li><code>hamoco-train my_custom_model.h5 data/ --hiden_layers 50 25 --epochs 20</code> : trains and save a model named <code>my_custom_model.h5</code> that contains two hidden layers (with dimensions 50 and 25 respectively) over 20 epochs, by using the compatible data in the <code>data</code> folder.</li>
+<li><code>hamoco-train my_custom_model.h5 data/ --epochs 10 --learning_rate 0.1</code> : trains and save a model named <code>my_custom_model.h5</code> with default dimensions over 20 epochs and with a learning rate of 0.1, by using the compatible data in the <code>data</code> folder.</li>
+</ul>
+<p>Your model can then be used in the main application with the <code>--model</code> flag of <em><a href="#hamoco-run">hamoco-run</a></em>, <em>e.g.</em> <code>hamoco-run --model &lt;path_to_your_model&gt;</code>.</p>
+<h2 id="author">Author</h2>
+<hr>
+<p><a href="https://jorisparet.github.io" target="_blank" rel="noopener">Joris Paret</a></p>
+
+    </div>
+
+    
+
+
+
+
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tag/python/">Python</a>
+  
+  <a class="badge badge-light" href="/tag/machine-learning/">Machine Learning</a>
+  
+  <a class="badge badge-light" href="/tag/deep-learning/">Deep Learning</a>
+  
+</div>
+
+
+
+<div class="share-box">
+  <ul class="share">
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+      
+      <a href="https://jorisparet.github.io/"><img class="avatar mr-3 avatar-circle" src="/authors/admin/avatar_hu00e4b378aee4cc5c1cad1070a307e5e0_24401_270x270_fill_q100_lanczos_center.jpg" alt="Joris Paret"></a>
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="https://jorisparet.github.io/">Joris Paret</a></h5>
+      <h6 class="card-subtitle">PhD. in Computational Physics</h6>
+      <p class="card-text">My main interests revolve around physics, simulation and computer science. I like to find innovative solutions to complex problems by combining my scientific knowledge with my technical skills in programming and machine learning.</p>
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+    <li>
+      <a href="mailto:joris.paret@gmail.com" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/jorisparet" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.linkedin.com/in/joris-paret" target="_blank" rel="noopener">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="/uploads/resume.pdf" >
+        <i class="ai ai-cv"></i>
+      </a>
+    </li>
+  
+</ul>
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="project-related-pages content-widget-hr">
+      
+      
+
+      
+      
+      
+
+      
+      
+      
+
+      
+      
+      
+    </div>
+  </div>
+</article>
+  </div>
+
+  <div class="page-footer">
+    
+    
+    <div class="container">
+      <footer class="site-footer">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+    
+  
+  
+    
+  
+
+  
+
+  
+  <p class="powered-by copyright-license-text">
+    © 2022 Joris Paret. This work is licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0" rel="noopener noreferrer" target="_blank">CC BY NC ND 4.0</a>
+  </p>
+  
+
+  <p class="powered-by footer-license-icons">
+    <a href="https://creativecommons.org/licenses/by-nc-nd/4.0" rel="noopener noreferrer" target="_blank" aria-label="Creative Commons">
+      <i class="fab fa-creative-commons fa-2x" aria-hidden="true"></i>
+      <i class="fab fa-creative-commons-by fa-2x" aria-hidden="true"></i>
+      
+        <i class="fab fa-creative-commons-nc fa-2x" aria-hidden="true"></i>
+      
+      
+        <i class="fab fa-creative-commons-nd fa-2x" aria-hidden="true"></i>
+      
+    </a>
+  </p>
+
+
+
+
+  <p class="powered-by">
+    
+    
+    
+      
+      
+      
+      
+      
+      
+      Published with <a href="https://wowchemy.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Wowchemy</a> — the free, <a href="https://github.com/wowchemy/wowchemy-hugo-themes" target="_blank" rel="noopener">open source</a> website builder that empowers creators.
+    
+  </p>
+</footer>
+
+    </div>
+    
+  </div>
+
+  
+
+
+<script src="/js/vendor-bundle.min.46271ef31da3f018e9cd1b59300aa265.js"></script>
+
+
+
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script id="search-hit-fuse-template" type="text/x-template">
+    <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+    </div>
+  </script>
+  
+    <script src="https://cdn.jsdelivr.net/gh/krisk/Fuse@v3.2.1/dist/fuse.min.js" integrity="sha512-o38bmzBGX+hD3JHWUFCDA09btWaqrNmoJ3RXLlrysA7PP01Kgs4UlE4MhelE1v5dJR3+cxlR4qQlotsW7jKsnw==" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/julmot/mark.js@8.11.1/dist/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+<script id="page-data" type="application/json">{"use_headroom":true}</script>
+
+
+
+  <script src="/js/wowchemy-headroom.c251366b4128fd5e6b046d4c97a62a51.js" type="module"></script>
+
+
+
+
+
+
+
+
+  
+  
+
+
+<script src="/en/js/wowchemy.min.a6238d5886fa4a2f7cf92df25709326f.js"></script>
+
+
+
+
+
+
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        
+        <pre><code></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <script src="/js/wowchemy-publication.68f8d7090562ca65fc6d3cb3f8f2d2cb.js" type="module"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

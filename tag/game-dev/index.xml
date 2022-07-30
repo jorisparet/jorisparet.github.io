@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Game Dev | Joris Paret</title>
+    <link>https://jorisparet.github.io/tag/game-dev/</link>
+      <atom:link href="https://jorisparet.github.io/tag/game-dev/index.xml" rel="self" type="application/rss+xml" />
+    <description>Game Dev</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Fri, 28 Jan 2022 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://jorisparet.github.io/media/icon_hu3286c80c0c8c5a3288a363fff1c21738_1117_512x512_fill_lanczos_center_3.png</url>
+      <title>Game Dev</title>
+      <link>https://jorisparet.github.io/tag/game-dev/</link>
+    </image>
+    
+    <item>
+      <title>Synth Road</title>
+      <link>https://jorisparet.github.io/project/synth-road/</link>
+      <pubDate>Fri, 28 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://jorisparet.github.io/project/synth-road/</guid>
+      <description>&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /project/synth-road/logo_hubc7924bf52b605797180a57e07dea06c_474684_8ee3a0519e0d5514617e91764f8db2af.webp 400w,
+               /project/synth-road/logo_hubc7924bf52b605797180a57e07dea06c_474684_4f637fca32d2473f216cbfd89eae1a83.webp 760w,
+               /project/synth-road/logo_hubc7924bf52b605797180a57e07dea06c_474684_1200x1200_fit_q100_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://jorisparet.github.io/project/synth-road/logo_hubc7924bf52b605797180a57e07dea06c_474684_8ee3a0519e0d5514617e91764f8db2af.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;371&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Synth Road&lt;/em&gt; is an arcade mobile game of obstacle course for Android with &lt;a href=&#34;https://en.wikipedia.org/wiki/Synthwave&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;synthwave&lt;/a&gt; vibes. Money generated from the &lt;strong&gt;optional&lt;/strong&gt; advertisement is donated to NGOs.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /project/synth-road/screenshot_huaf22aa47176846097c1370633a1b7763_167575_9c919d0d28f0bc78df46291cb3815f4d.webp 400w,
+               /project/synth-road/screenshot_huaf22aa47176846097c1370633a1b7763_167575_9a948736c494547099dea9803b1f3934.webp 760w,
+               /project/synth-road/screenshot_huaf22aa47176846097c1370633a1b7763_167575_1200x1200_fit_q100_h2_lanczos.webp 1200w&#34;
+               src=&#34;https://jorisparet.github.io/project/synth-road/screenshot_huaf22aa47176846097c1370633a1b7763_167575_9c919d0d28f0bc78df46291cb3815f4d.webp&#34;
+               width=&#34;380&#34;
+               height=&#34;760&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;h2 id=&#34;game-rules&#34;&gt;Game rules&lt;/h2&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li&gt;Hold your finger down at the bottom of the screen and move it to slide the player left and right to avoid the obstacles.&lt;/li&gt;
+&lt;li&gt;Collect as many blue bonuses as possible to increase the score multiplier.&lt;/li&gt;
+&lt;li&gt;Collect gold bonuses to temporarily become invincible: bash through obstacles and collect as many blue bonuses as possible.&lt;/li&gt;
+&lt;li&gt;Use the power buttons to temporarily slow time, shrink the player or disintegrate obstacles.&lt;/li&gt;
+&lt;li&gt;Publish your highscores on the leaderboard to compare your results with other players.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;about&#34;&gt;About&lt;/h2&gt;
+&lt;hr&gt;
+&lt;p&gt;Synth Road is made with &lt;a href=&#34;https://unity.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Unity&lt;/a&gt;. Illustrations, music and sound effects are original creations.&lt;/p&gt;
+&lt;h2 id=&#34;author&#34;&gt;Author&lt;/h2&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;a href=&#34;https://jorisparet.github.io&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Joris Paret&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
