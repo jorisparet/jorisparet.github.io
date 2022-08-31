@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Deep Learning | Joris Paret</title>
-    <link>https://jorisparet.github.io/tag/deep-learning/</link>
-      <atom:link href="https://jorisparet.github.io/tag/deep-learning/index.xml" rel="self" type="application/rss+xml" />
+    <link>www.jorisparet.com/tag/deep-learning/</link>
+      <atom:link href="www.jorisparet.com/tag/deep-learning/index.xml" rel="self" type="application/rss+xml" />
     <description>Deep Learning</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 29 May 2022 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://jorisparet.github.io/media/icon_huf5b7e9305d8ca00c36bcf7194f7e4936_69678_512x512_fill_lanczos_center_3.png</url>
+      <url>/www.jorisparet.com/media/icon_huf5b7e9305d8ca00c36bcf7194f7e4936_69678_512x512_fill_lanczos_center_3.png</url>
       <title>Deep Learning</title>
-      <link>https://jorisparet.github.io/tag/deep-learning/</link>
+      <link>www.jorisparet.com/tag/deep-learning/</link>
     </image>
     
     <item>
       <title>hamoco</title>
-      <link>https://jorisparet.github.io/project/hamoco/</link>
+      <link>www.jorisparet.com/project/hamoco/</link>
       <pubDate>Sun, 29 May 2022 00:00:00 +0000</pubDate>
-      <guid>https://jorisparet.github.io/project/hamoco/</guid>
+      <guid>www.jorisparet.com/project/hamoco/</guid>
       <description>&lt;p&gt;
 
 
@@ -36,7 +36,7 @@
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
     &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34;
-           src=&#34;https://jorisparet.github.io/project/hamoco/logo.svg&#34;
+           src=&#34;www.jorisparet.com/www.jorisparet.com/project/hamoco/logo.svg&#34;
            loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
