@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Joris Paret</title>
-    <link>www.jorisparet.com/</link>
-      <atom:link href="www.jorisparet.com/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://jorisparet.github.io/</link>
+      <atom:link href="https://jorisparet.github.io/index.xml" rel="self" type="application/rss+xml" />
     <description>Joris Paret</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sat, 01 Jun 2030 13:00:00 +0000</lastBuildDate>
     <image>
-      <url>/www.jorisparet.com/media/icon_huf5b7e9305d8ca00c36bcf7194f7e4936_69678_512x512_fill_lanczos_center_3.png</url>
+      <url>https://jorisparet.github.io/media/icon_huf5b7e9305d8ca00c36bcf7194f7e4936_69678_512x512_fill_lanczos_center_3.png</url>
       <title>Joris Paret</title>
-      <link>www.jorisparet.com/</link>
+      <link>https://jorisparet.github.io/</link>
     </image>
     
     <item>
       <title>Example Talk</title>
-      <link>www.jorisparet.com/talk/example-talk/</link>
+      <link>https://jorisparet.github.io/talk/example-talk/</link>
       <pubDate>Sat, 01 Jun 2030 13:00:00 +0000</pubDate>
-      <guid>www.jorisparet.com/talk/example-talk/</guid>
+      <guid>https://jorisparet.github.io/talk/example-talk/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
     Click on the &lt;strong&gt;Slides&lt;/strong&gt; button above to view the built-in slides feature.
@@ -34,9 +34,9 @@
     
     <item>
       <title>hamoco</title>
-      <link>www.jorisparet.com/project/hamoco/</link>
+      <link>https://jorisparet.github.io/project/hamoco/</link>
       <pubDate>Sun, 29 May 2022 00:00:00 +0000</pubDate>
-      <guid>www.jorisparet.com/project/hamoco/</guid>
+      <guid>https://jorisparet.github.io/project/hamoco/</guid>
       <description>&lt;p&gt;
 
 
@@ -56,7 +56,7 @@
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
     &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34;
-           src=&#34;www.jorisparet.com/www.jorisparet.com/project/hamoco/logo.svg&#34;
+           src=&#34;https://jorisparet.github.io/project/hamoco/logo.svg&#34;
            loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
@@ -184,9 +184,9 @@
     
     <item>
       <title>Synth Road</title>
-      <link>www.jorisparet.com/project/synth-road/</link>
+      <link>https://jorisparet.github.io/project/synth-road/</link>
       <pubDate>Fri, 28 Jan 2022 00:00:00 +0000</pubDate>
-      <guid>www.jorisparet.com/project/synth-road/</guid>
+      <guid>https://jorisparet.github.io/project/synth-road/</guid>
       <description>&lt;p&gt;
 
 
@@ -206,10 +206,10 @@
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
     &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
-               /www.jorisparet.com/project/synth-road/logo_hubc7924bf52b605797180a57e07dea06c_474684_9e0aa446e4983e2cfa313fdaf2018abc.webp 400w,
-               /www.jorisparet.com/project/synth-road/logo_hubc7924bf52b605797180a57e07dea06c_474684_4f637fca32d2473f216cbfd89eae1a83.webp 760w,
-               /www.jorisparet.com/project/synth-road/logo_hubc7924bf52b605797180a57e07dea06c_474684_1200x1200_fit_q100_h2_lanczos_3.webp 1200w&#34;
-               src=&#34;www.jorisparet.com/www.jorisparet.com/project/synth-road/logo_hubc7924bf52b605797180a57e07dea06c_474684_9e0aa446e4983e2cfa313fdaf2018abc.webp&#34;
+               /project/synth-road/logo_hubc7924bf52b605797180a57e07dea06c_474684_8ee3a0519e0d5514617e91764f8db2af.webp 400w,
+               /project/synth-road/logo_hubc7924bf52b605797180a57e07dea06c_474684_4f637fca32d2473f216cbfd89eae1a83.webp 760w,
+               /project/synth-road/logo_hubc7924bf52b605797180a57e07dea06c_474684_1200x1200_fit_q100_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://jorisparet.github.io/project/synth-road/logo_hubc7924bf52b605797180a57e07dea06c_474684_8ee3a0519e0d5514617e91764f8db2af.webp&#34;
                width=&#34;760&#34;
                height=&#34;371&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
@@ -235,10 +235,10 @@
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
     &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
-               /www.jorisparet.com/project/synth-road/screenshot_huaf22aa47176846097c1370633a1b7763_167575_187f0311dbfdca0e98c1a7ee923368bc.webp 400w,
-               /www.jorisparet.com/project/synth-road/screenshot_huaf22aa47176846097c1370633a1b7763_167575_9a948736c494547099dea9803b1f3934.webp 760w,
-               /www.jorisparet.com/project/synth-road/screenshot_huaf22aa47176846097c1370633a1b7763_167575_1200x1200_fit_q100_h2_lanczos.webp 1200w&#34;
-               src=&#34;www.jorisparet.com/www.jorisparet.com/project/synth-road/screenshot_huaf22aa47176846097c1370633a1b7763_167575_187f0311dbfdca0e98c1a7ee923368bc.webp&#34;
+               /project/synth-road/screenshot_huaf22aa47176846097c1370633a1b7763_167575_9c919d0d28f0bc78df46291cb3815f4d.webp 400w,
+               /project/synth-road/screenshot_huaf22aa47176846097c1370633a1b7763_167575_9a948736c494547099dea9803b1f3934.webp 760w,
+               /project/synth-road/screenshot_huaf22aa47176846097c1370633a1b7763_167575_1200x1200_fit_q100_h2_lanczos.webp 1200w&#34;
+               src=&#34;https://jorisparet.github.io/project/synth-road/screenshot_huaf22aa47176846097c1370633a1b7763_167575_9c919d0d28f0bc78df46291cb3815f4d.webp&#34;
                width=&#34;380&#34;
                height=&#34;760&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
@@ -264,27 +264,27 @@
     
     <item>
       <title>Hidden order in disordered materials</title>
-      <link>www.jorisparet.com/publication/2021_thesis/</link>
+      <link>https://jorisparet.github.io/publication/2021_thesis/</link>
       <pubDate>Fri, 26 Nov 2021 00:00:00 +0000</pubDate>
-      <guid>www.jorisparet.com/publication/2021_thesis/</guid>
+      <guid>https://jorisparet.github.io/publication/2021_thesis/</guid>
       <description>&lt;!-- Supplementary notes can be added here, including [code, math, and images](https://wowchemy.com/docs/writing-markdown-latex/). --&gt;
 </description>
     </item>
     
     <item>
       <title>partycls: A Python package for structural clustering</title>
-      <link>www.jorisparet.com/publication/2021_joss/</link>
+      <link>https://jorisparet.github.io/publication/2021_joss/</link>
       <pubDate>Mon, 01 Nov 2021 00:00:00 +0000</pubDate>
-      <guid>www.jorisparet.com/publication/2021_joss/</guid>
+      <guid>https://jorisparet.github.io/publication/2021_joss/</guid>
       <description>&lt;!-- Supplementary notes can be added here, including [code, math, and images](https://wowchemy.com/docs/writing-markdown-latex/). --&gt;
 </description>
     </item>
     
     <item>
       <title>partycls</title>
-      <link>www.jorisparet.com/project/partycls/</link>
+      <link>https://jorisparet.github.io/project/partycls/</link>
       <pubDate>Tue, 16 Mar 2021 00:00:00 +0000</pubDate>
-      <guid>www.jorisparet.com/project/partycls/</guid>
+      <guid>https://jorisparet.github.io/project/partycls/</guid>
       <description>&lt;p&gt;
 
 
@@ -304,7 +304,7 @@
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
     &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34;
-           src=&#34;www.jorisparet.com/www.jorisparet.com/project/partycls/logo.svg&#34;
+           src=&#34;https://jorisparet.github.io/project/partycls/logo.svg&#34;
            loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
@@ -438,9 +438,9 @@
     
     <item>
       <title>Welcome to Wowchemy, the website builder for Hugo</title>
-      <link>www.jorisparet.com/post/getting-started/</link>
+      <link>https://jorisparet.github.io/post/getting-started/</link>
       <pubDate>Sun, 13 Dec 2020 00:00:00 +0000</pubDate>
-      <guid>www.jorisparet.com/post/getting-started/</guid>
+      <guid>https://jorisparet.github.io/post/getting-started/</guid>
       <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;The Wowchemy website builder for Hugo, along with its starter templates, is designed for professional creators, educators, and teams/organizations - although it can be used to create any kind of site&lt;/li&gt;
@@ -517,18 +517,18 @@
     
     <item>
       <title>Assessing the structural heterogeneity of supercooled liquids through community inference</title>
-      <link>www.jorisparet.com/publication/2020_jcp/</link>
+      <link>https://jorisparet.github.io/publication/2020_jcp/</link>
       <pubDate>Thu, 09 Apr 2020 00:00:00 +0000</pubDate>
-      <guid>www.jorisparet.com/publication/2020_jcp/</guid>
+      <guid>https://jorisparet.github.io/publication/2020_jcp/</guid>
       <description>&lt;!-- Supplementary notes can be added here, including [code, math, and images](https://wowchemy.com/docs/writing-markdown-latex/). --&gt;
 </description>
     </item>
     
     <item>
       <title></title>
-      <link>www.jorisparet.com/admin/config.yml</link>
+      <link>https://jorisparet.github.io/admin/config.yml</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>www.jorisparet.com/admin/config.yml</guid>
+      <guid>https://jorisparet.github.io/admin/config.yml</guid>
       <description></description>
     </item>
     
