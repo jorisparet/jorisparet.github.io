@@ -355,7 +355,7 @@
         content="2022-05-29T00:00:00&#43;00:00"
       />
     
-    <meta property="article:modified_time" content="2022-07-30T18:50:30&#43;02:00">
+    <meta property="article:modified_time" content="2022-09-07T19:31:03&#43;02:00">
   
 
   
@@ -382,7 +382,7 @@
   "headline": "hamoco",
   
   "datePublished": "2022-05-29T00:00:00Z",
-  "dateModified": "2022-07-30T18:50:30+02:00",
+  "dateModified": "2022-09-07T19:31:03+02:00",
   
   "publisher": {
     "@type": "Organization",
@@ -832,7 +832,7 @@
           Last updated on
       
     
-    Jul 30, 2022
+    Sep 7, 2022
   </span>
   
 
@@ -934,7 +934,8 @@
            loading="lazy" data-zoomable /></div>
   </div></figure>
 </p>
-<p><strong>hamoco</strong> (<em>handy mouse controller</em>) is a python application that allows you to control your mouse from your webcam using various hand gestures. You have a laptop equiped with a webcam? Well, good news, that&rsquo;s all you need to feel like Tom Cruise in <a href="https://en.wikipedia.org/wiki/Minority_Report_%28film%29" target="_blank" rel="noopener">Minority Report</a>! Kind of.</p>
+<h1 id="hamoco">Hamoco</h1>
+<p><strong>hamoco</strong> (<em>handy mouse controller</em>) is a python application that allows you to control your mouse from your webcam using various hand gestures. You have a laptop equipped with a webcam? Well, good news, that&rsquo;s all you need to feel like Tom Cruise in <a href="https://en.wikipedia.org/wiki/Minority_Report_%28film%29" target="_blank" rel="noopener">Minority Report</a>! Kind of.</p>
 <h3 id="demonstration">Demonstration</h3>
 <p>In the example below, the hand is used to move the pointer, open a file by double-clicking on it, scroll through it, select a paragraph and cut it. The file is then dragged and dropped into a folder.</p>
 <p>
@@ -959,50 +960,58 @@
   </div></figure>
 </p>
 <h3 id="how-does-it-work">How does it work?</h3>
-<p>By using the power of <a href="https://pypi.org/project/PyAutoGUI/" target="_blank" rel="noopener">PyAutoGUI</a> to control the mouse, <a href="https://pypi.org/project/opencv-python/" target="_blank" rel="noopener">openCV</a> to process the video feed, and <a href="https://google.github.io/mediapipe/" target="_blank" rel="noopener">MediaPipe</a> to track hands, <strong>hamoco</strong> predicts the nature of a hand pose in real-time thanks to a neural network and uses it to perform various kinds of mouse pointer actions.</p>
+<p>By using the power of <a href="https://pypi.org/project/PyAutoGUI/" target="_blank" rel="noopener">PyAutoGUI</a> to control the mouse, <a href="https://pypi.org/project/opencv-python/" target="_blank" rel="noopener">OpenCV</a> to process the video feed, and <a href="https://google.github.io/mediapipe/" target="_blank" rel="noopener">MediaPipe</a> to track hands, <strong>hamoco</strong> predicts the nature of a hand pose in real-time thanks to a neural network built with <a href="https://keras.io/" target="_blank" rel="noopener">Keras</a> and uses it to perform various kinds of mouse pointer actions.</p>
 <h2 id="installation">Installation</h2>
-<hr>
-<p>From the <a href="https://github.com/jorisparet/hamoco" target="_blank" rel="noopener">code repository</a>:</p>
+<p><strong>1.</strong> From <a href="https://pypi.org/project/hamoco/" target="_blank" rel="noopener">PyPI</a>:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">pip install hamoco
+</span></span></code></pre></div><hr>
+<p><strong>2.</strong> From the <a href="https://github.com/jorisparet/hamoco" target="_blank" rel="noopener">code repository</a>:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">git clone https://github.com/jorisparet/hamoco
 </span></span><span class="line"><span class="cl">cd hamoco
 </span></span><span class="line"><span class="cl">pip install -r requirements.txt
 </span></span><span class="line"><span class="cl">pip install .
-</span></span></code></pre></div><p><em>The package will be published on <a href="https://pypi.org/" target="_blank" rel="noopener">PyPI</a> at a later stage of development.</em></p>
-<h3 id="requirements">Requirements:</h3>
-<ul>
-<li><a href="https://pypi.org/project/PyAutoGUI/" target="_blank" rel="noopener">PyAutoGUI</a></li>
-<li><a href="https://pypi.org/project/numpy/" target="_blank" rel="noopener">NumPy</a></li>
-<li><a href="https://pypi.org/project/opencv-python/" target="_blank" rel="noopener">openCV</a></li>
-<li><a href="https://google.github.io/mediapipe/" target="_blank" rel="noopener">MediaPipe</a></li>
-<li><a href="https://www.tensorflow.org" target="_blank" rel="noopener">TensorFlow</a></li>
-</ul>
-<h2 id="quick-start">Quick start</h2>
-<hr>
-<p>After the installation, the package should have copied three binaries in the <code>.local/bin/</code> folder of your home directory:</p>
+</span></span></code></pre></div><hr>
+<p>The installation copies three scripts in the default script folder of <code>pip</code>:</p>
 <ol>
 <li><code>hamoco-run</code></li>
 <li><code>hamoco-data</code></li>
 <li><code>hamoco-train</code></li>
 </ol>
-<p>(<em>Make sure this location is included in your <code>$PATH</code> environment variable</em>)</p>
-<p>Run these applications directly in the terminal, <em>e.g.</em> <code>hamoco-run --sensitivity 0.5 --show</code>.</p>
+<h4 id="linux">Linux</h4>
+<p>The default folder should be under <code>/home/&lt;user&gt;/.local/bin/</code>. Make sure this location (or the correct one, if different) is included in your <code>$PATH</code> environment variable to be able to run the scripts from the console. If not, type the following command <code>export PATH=$PATH:/path/to/hamoco/scripts/</code> in the console or add it your <code>.bashrc</code> file.</p>
+<h4 id="windows">Windows</h4>
+<p>The default folder should be under <code>C:\Users\&lt;user&gt;\AppData\Local\Programs\Python\&lt;python_version&gt;\Scripts\</code>. Make sure this location (or the correct one, if different) is included in your <code>$PATH</code> environment variable to be able to run the scripts from the console. If not, type the following command <code>set PATH=%PATH%;C:\path\to\hamoco\scripts\</code> in the console, or select <code>Edit the system environment variables</code> in the search bar, click <code>Environment Variables…</code>, click <code>PATH</code>, click <code>Edit...</code> and add the correct path to the scripts.</p>
+<h3 id="requirements">Requirements:</h3>
+<ul>
+<li><a href="https://pypi.org/project/PyAutoGUI/" target="_blank" rel="noopener">PyAutoGUI</a></li>
+<li><a href="https://pypi.org/project/numpy/" target="_blank" rel="noopener">NumPy</a></li>
+<li><a href="https://pypi.org/project/opencv-python/" target="_blank" rel="noopener">OpenCV</a></li>
+<li><a href="https://google.github.io/mediapipe/" target="_blank" rel="noopener">MediaPipe</a></li>
+<li><a href="https://www.tensorflow.org" target="_blank" rel="noopener">TensorFlow</a></li>
+</ul>
+<h2 id="quick-start">Quick start</h2>
+<h3 id="running-the-scripts">Running the scripts</h3>
+<p><strong>hamoco</strong> is composed of three executable scripts: <em><a href="#hamoco-run">hamoco-run</a></em>, <em><a href="#hamoco-data">hamoco-data</a></em>, and <em><a href="#hamoco-train">hamoco-train</a></em>, that are listed below. Run these scripts directly from the console, <em>e.g.</em> <code>hamoco-run --sensitivity 0.5 --show</code>.</p>
 <h3 id="hamoco-run">hamoco-run</h3>
-<p><em>hamoco-run</em> is the <strong>main application</strong>. It activates the webcam and allows to use hand gestures to take control of the mouse pointer. Several basic actions can then be performed, such as <em>left click</em>, <em>right click</em>, <em>drag and drop</em> and <em>scrolling</em>. Various settings can be adjusted to customize the hand controller to your liking, such as the global sensivitity and parameters for motion smoothing. Type <code>--help</code> for more information on the available options.</p>
+<p><em>hamoco-run</em> is the <strong>main application</strong>. It activates the webcam and allows to use hand gestures to take control of the mouse pointer. Several basic actions can then be performed, such as <em>left click</em>, <em>right click</em>, <em>drag and drop</em> and <em>scrolling</em>. Note that it requires <strong>a bit of practice</strong> before getting comfortable with the controls. Various settings can be adjusted to customize the hand controller to your liking, such as the global sensivitity, parameters for motion smoothing and much more. Type <code>hamoco-run --help</code> for more information on the available options.</p>
 <p>Examples:</p>
 <ul>
 <li><code>hamoco-run --sensitivity 0.4 --scrolling_threshold 0.2</code> : adapts the sensitivity and sets a custom threshold value to trigger scrolling motions.</li>
 <li><code>hamoco-run --min_cutoff_filter 0.05 --show</code> : sets a custom value for the cutoff frequency used for motion smoothing and opens a window that shows the processed video feed in real-time.</li>
 <li><code>hamoco-run --scrolling_speed 20</code> : sets a custom value for the scrolling speed. Note that for a given value, results may differ significantly depending on the operating system.</li>
+<li><code>hamoco-run --margin 0.2 --stop_sequence THUMB_SIDE CLOSE INDEX_MIDDLE_UP</code> : adapts the size of the detection margin (indicated by the dark frame in the preview windows using <code>--show</code>), and changes the sequence of consecutive poses to stop the application.</li>
 </ul>
-<p><strong>Hand poses &amp; Mouse actions:</strong></p>
+<p>Configuration files with default values for the control parameters can be found in the installation folder, under <code>hamoco/config/</code>. Simply edit the file that corresponds to your operating system (<code>posix.json</code> for <strong>Linux</strong> and <code>nt.json</code> for <strong>Windows</strong>) to save your settings permanently, and hence avoid specifying the parameters by hand in the console.</p>
+<h4 id="hand-poses--mouse-actions">Hand poses &amp; Mouse actions:</h4>
 <ul>
-<li><code>OPEN</code> : the pointer is free and follows the center of the palm (indicated by the white empty square) ;</li>
-<li><code>CLOSE</code> : the pointer stops all actions ;</li>
+<li><code>OPEN</code> : the pointer is free and follows the center of the palm (indicated by the white square) ;</li>
+<li><code>CLOSE</code> : the pointer stops all actions. The hand can be moved anywhere in the frame without moving the pointer. This is used to reset the origin of motion (see the <em>nota bene</em> below) ;</li>
 <li><code>INDEX_UP</code> : performs a left-click at the current pointer location. Execute twice rapidly for a double-click ;</li>
 <li><code>PINKY_UP</code> : performs a right click at the current pointer location ;</li>
 <li><code>INDEX_MIDDLE_UP</code> : holds the left mouse button down and moves the pointer by following the center of the palm. This is used for selection and drag &amp; drop ;</li>
 <li><code>THUMB_SIDE</code> : enables vertical scrolling using the first triggering location as origin. Scrolling up or down is done by moving the hand up or down relative to the origin while keeping the same hand pose ;</li>
 </ul>
+<p><strong>N.B.</strong> note that, much like a real mouse, the recorded motion of the pointer is <em>relative</em> to its previous position. When your mouse reaches the edge of your mouse pad, you simply lift it and land it back somewhere on the pad to start moving again. Similarly, if your hand reaches the edge of the frame, the pointer will stop moving: simply close your fist and move it back into the frame to reset the origin of motion (exactly like when lifting and moving a real mouse).</p>
 <p>The various hand poses are illustrated below:</p>
 <p>
 
@@ -1022,23 +1031,30 @@
 
 <figure  >
   <div class="d-flex justify-content-center">
-    <div class="w-100" ><img src="https://raw.githubusercontent.com/jorisparet/hamoco/main/images/hand_poses.png" alt="" loading="lazy" data-zoomable /></div>
+    <div class="w-100" ><img src="https://raw.githubusercontent.com/jorisparet/hamoco/main/images/hand_poses.jpg" alt="" loading="lazy" data-zoomable /></div>
   </div></figure>
 </p>
+<h4 id="exiting-the-application">Exiting the application:</h4>
+<p>There are two ways to exit the application:</p>
+<ol>
+<li>In the preview mode (<code>--show</code> option enabled), simply click on the preview window and press <code>ESC</code> ;</li>
+<li>Execute a predetermined sequence of consecutive hand poses. The default sequence can be found in the help message (<code>hamoco-run --help</code>). A new sequence can be specified with the <code>--stop_sequence</code> option followed by the consecutive hand poses, or it can simply be changed in the <code>.json</code> configuration file.</li>
+</ol>
 <h3 id="hamoco-data">hamoco-data</h3>
-<p><em>hamoco-data</em> activates the webcam and allows to record your own labeled data for hand poses in order to train a custom NN-based classification model for the main application. This model can then be used in place of the one provided by default and will be more performant, as it will be trained on your personal and natural hand poses (see <em><a href="#hamoco-train">hamoco-train</a></em>). Type <code>--help</code> for more information on the available options.</p>
+<p><em>hamoco-data</em> activates the webcam and allows to record your own labeled data for hand poses in order to train a custom neural-network-based classification model for the main application. This model can then be used in place of the one provided by default and will be more performant, as it will be trained on your personal and natural hand poses (see <em><a href="#hamoco-train">hamoco-train</a></em>). Type <code>hamoco-data --help</code> for more information on the available options.</p>
 <p>This application requires two arguments:</p>
 <ul>
-<li><code>pose</code>: a string that indicates the type of hand pose you intend to record. It should be one of {<em>OPEN, CLOSE, INDEX_UP, PINKY_UP, THUMB_SIDE, INDEX_MIDDLE_UP</em>}.</li>
+<li><code>pose</code>: a string that indicates the type of hand pose you intend to record. It should be one of: <code>OPEN</code>, <code>CLOSE</code>, <code>INDEX_UP</code>, <code>PINKY_UP</code>, <code>THUMB_SIDE</code>, <code>INDEX_MIDDLE_UP</code>.</li>
 <li><code>path_to_data</code>: path to the folder inside of which you want the recorded data to be saved.</li>
 </ul>
 <p>Examples:</p>
 <ul>
-<li><code>hamoco-data OPEN data/ --delay 1.0</code> : starts the recording for the <em>OPEN</em> hand pose, stores the resulting data in the <code>data</code> folder (provided it exists!), and takes a new snapshot every second.</li>
-<li><code>hamoco-data INDEX_UP data/ --delay 0.25 --images</code> : starts the recording for the <em>INDEX_UP</em> hand pose, stores the resulting data in the <code>data</code> folder, takes a new snapshot every 0.25s, and saves the images (in addition to the numeric data file used for training the model). Saving images can be useful if you want to manually check if your hand was in a correct position when its numerical data was recorded, and hence keep or remove specific data files accordingly.</li>
+<li><code>hamoco-data OPEN data/ --delay 1.0</code> : starts the recording for the <code>OPEN</code> hand pose, stores the resulting data in the <code>data</code> folder (provided it exists!), and takes a new snapshot every second.</li>
+<li><code>hamoco-data INDEX_UP data/ --delay 0.25 --images</code> : starts the recording for the <code>INDEX_UP</code> hand pose, stores the resulting data in the <code>data</code> folder, takes a new snapshot every 0.25s, and saves the images (in addition to the numeric data file used for training the model). Saving images can be useful if you want to manually check if your hand was in a correct position when its numerical data was recorded, and hence keep or remove specific data files accordingly.</li>
+<li><code>hamoco-data CLOSE data/ --reset --stop_after 200</code> : starts the recording of the <code>CLOSE</code> hand pose, stores the resulting data in the <code>data</code> folder, deletes every previously recorded file for this hand pose, and automatically stop the recording after taking 200 snapshots.</li>
 </ul>
 <h3 id="hamoco-train">hamoco-train</h3>
-<p>Provided a path to a directory with compatible data, <em>hamoco-train</em> trains a customizable NN-based classification model to predict a hand pose. This classification model can then be used in the main application in place of the one provided by default. Type <code>--help</code> for more information on the available options.</p>
+<p>Provided a path to a directory with compatible data, <em>hamoco-train</em> trains a customizable NN-based classification model to predict a hand pose. This classification model can then be used in the main application in place of the one provided by default. Type <code>hamoco-train --help</code> for more information on the available options.</p>
 <p>This application requires two arguments:</p>
 <ul>
 <li><code>path_to_model</code> : path to save the newly trained model.</li>
@@ -1049,10 +1065,9 @@
 <li><code>hamoco-train my_custom_model.h5 data/ --hiden_layers 50 25 --epochs 20</code> : trains and save a model named <code>my_custom_model.h5</code> that contains two hidden layers (with dimensions 50 and 25 respectively) over 20 epochs, by using the compatible data in the <code>data</code> folder.</li>
 <li><code>hamoco-train my_custom_model.h5 data/ --epochs 10 --learning_rate 0.1</code> : trains and save a model named <code>my_custom_model.h5</code> with default dimensions over 20 epochs and with a learning rate of 0.1, by using the compatible data in the <code>data</code> folder.</li>
 </ul>
-<p>Your model can then be used in the main application with the <code>--model</code> flag of <em><a href="#hamoco-run">hamoco-run</a></em>, <em>e.g.</em> <code>hamoco-run --model &lt;path_to_your_model&gt;</code>.</p>
+<p>Your model can then be used in the main application with the <code>--model</code> flag of <em><a href="#hamoco-run">hamoco-run</a></em>, <em>e.g.</em> <code>hamoco-run --model &lt;path_to_your_model&gt;</code> , or you can change the <code>.json</code> configuration file to point to it.</p>
 <h2 id="author">Author</h2>
-<hr>
-<p><a href="https://jorisparet.github.io" target="_blank" rel="noopener">Joris Paret</a></p>
+<p><a href="https://www.jorisparet.com/" target="_blank" rel="noopener">Joris Paret</a></p>
 
     </div>
 
