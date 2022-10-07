@@ -5,12 +5,23 @@
     <link>https://jorisparet.github.io/tag/deep-learning/</link>
       <atom:link href="https://jorisparet.github.io/tag/deep-learning/index.xml" rel="self" type="application/rss+xml" />
     <description>Deep Learning</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 29 May 2022 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 07 Sep 2022 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://jorisparet.github.io/media/icon_huf5b7e9305d8ca00c36bcf7194f7e4936_69678_512x512_fill_lanczos_center_3.png</url>
       <title>Deep Learning</title>
       <link>https://jorisparet.github.io/tag/deep-learning/</link>
     </image>
+    
+    <item>
+      <title>First official release of hamoco</title>
+      <link>https://jorisparet.github.io/post/2022-09-07_hamoco-first-release/</link>
+      <pubDate>Wed, 07 Sep 2022 00:00:00 +0000</pubDate>
+      <guid>https://jorisparet.github.io/post/2022-09-07_hamoco-first-release/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;hamoco&lt;/strong&gt; (&lt;em&gt;handy mouse controller&lt;/em&gt;) allows you to take control of your mouse by using hand gestures that are captured in real time by your webcam. It relies on &lt;a href=&#34;https://google.github.io/mediapipe/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;MediaPipe&lt;/a&gt; to track hands, and the nature of the different hand poses are predicted by a small neural network built with &lt;a href=&#34;https://www.tensorflow.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;TensorFlow&lt;/a&gt;. Basically, I thought that it might be fun to try and replicate the famous scene from the movie &lt;a href=&#34;https://en.wikipedia.org/wiki/Minority_Report_%28film%29&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Minority Report&lt;/a&gt; (spoiler: it&amp;rsquo;s cooler when Tom Cruise does it).&lt;/p&gt;
+&lt;p&gt;You can perform all the basic mouse actions: &lt;em&gt;motion&lt;/em&gt;, &lt;em&gt;left/right click&lt;/em&gt;, &lt;em&gt;vertical scrolling&lt;/em&gt; and &lt;em&gt;drag &amp;amp; drop&lt;/em&gt;. There are many options to adjust the experience to your liking (&lt;em&gt;e.g.&lt;/em&gt; sensitivity, motion smoothing) and even an automated pipeline to record your own data and train a custom neural network tailored to your needs.&lt;/p&gt;
+&lt;p&gt;The code is now available on &lt;a href=&#34;https://pypi.org/project/hamoco/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;PyPI&lt;/a&gt; in version 1.0.1, and you can also check out the page of the project on &lt;a href=&#34;https://github.com/jorisparet/hamoco&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>hamoco</title>

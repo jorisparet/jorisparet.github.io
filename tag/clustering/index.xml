@@ -5,12 +5,69 @@
     <link>https://jorisparet.github.io/tag/clustering/</link>
       <atom:link href="https://jorisparet.github.io/tag/clustering/index.xml" rel="self" type="application/rss+xml" />
     <description>Clustering</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Tue, 16 Mar 2021 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 08 Nov 2021 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://jorisparet.github.io/media/icon_huf5b7e9305d8ca00c36bcf7194f7e4936_69678_512x512_fill_lanczos_center_3.png</url>
       <title>Clustering</title>
       <link>https://jorisparet.github.io/tag/clustering/</link>
     </image>
+    
+    <item>
+      <title>“partycls: A Python package for structural clustering” - The Journal of Open Source Software</title>
+      <link>https://jorisparet.github.io/post/2021-11-08_partycls-joss/</link>
+      <pubDate>Mon, 08 Nov 2021 00:00:00 +0000</pubDate>
+      <guid>https://jorisparet.github.io/post/2021-11-08_partycls-joss/</guid>
+      <description>&lt;h1 id=&#34;presentation&#34;&gt;Presentation&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;partycls&lt;/strong&gt; is a Python framework for cluster analysis of systems of interacting particles. By grouping particles that share similar structural or dynamical properties, partycls enables rapid and unsupervised exploration of the system’s relevant features. It provides descriptors suitable for applications in condensed matter physics and integrates the necessary tools of unsupervised learning, such as dimensionality reduction, into a streamlined workflow. Through a simple and expressive interface, partycls allows one to open a trajectory file, perform a clustering based on the selected structural descriptor, and analyze and save the results with only a few lines of code.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;related-publication&#34;&gt;Related publication&lt;/h1&gt;
+&lt;p&gt;A &lt;a href=&#34;https://joss.theoj.org/papers/10.21105/joss.03723&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;short paper&lt;/a&gt; presenting the code, written in collaboration with &lt;a href=&#34;https://www2.units.it/daniele.coslovich/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Daniele Coslovich&lt;/a&gt;, was published in &lt;em&gt;The Journal of Open Source Software&lt;/em&gt;.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;short-example&#34;&gt;Short example&lt;/h1&gt;
+&lt;p&gt;As a simple example, we consider the detection of the grain boundaries in a polycrystal formed by differently oriented FCC crystallites. This is easily achieved even with a simple radial descriptor, since the average radial distribution of particles at the boundaries is different than the one of the crystal in the bulk. The following short piece of code opens the input trajectory stored in the file &lt;code&gt;grains.xyz&lt;/code&gt;, computes the local radial distribution functions of the particles, applies a standard &lt;a href=&#34;https://en.wikipedia.org/wiki/Standard_score&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Z-Score&lt;/a&gt; normalization on the data, and finally performs a clustering using the &lt;a href=&#34;https://towardsdatascience.com/gaussian-mixture-models-explained-6986aaf5a95&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Gaussian mixture model&lt;/a&gt; (GMM) with $K = 2$ clusters (default):&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kn&#34;&gt;from&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;partycls&lt;/span&gt; &lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;Workflow&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;wf&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;Workflow&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;grains.xyz&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	      &lt;span class=&#34;n&#34;&gt;descriptor&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;gr&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	      &lt;span class=&#34;n&#34;&gt;scaling&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;zscore&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	      &lt;span class=&#34;n&#34;&gt;clustering&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;gmm&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;wf&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;run&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Each of these steps is easily tunable, so as to change the workflow with little effort. The labels are available as a simple attribute of the &lt;code&gt;Workflow&lt;/code&gt; instance. Optionally, a set of output files can be produced for further analysis, including a trajectory file with the cluster labels. Quick visualization of the clusters, as in the following figure, is possible within partycls through optional visualization backends.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /post/2021-11-08_partycls-joss/grains_huf7f5a4cdd2bca08a8f624fe01d8b681f_360916_485585a79fefc515a99cd33b3de36443.webp 400w,
+               /post/2021-11-08_partycls-joss/grains_huf7f5a4cdd2bca08a8f624fe01d8b681f_360916_29b3139895507953058505ba0aa2846c.webp 760w,
+               /post/2021-11-08_partycls-joss/grains_huf7f5a4cdd2bca08a8f624fe01d8b681f_360916_1200x1200_fit_q100_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://jorisparet.github.io/post/2021-11-08_partycls-joss/grains_huf7f5a4cdd2bca08a8f624fe01d8b681f_360916_485585a79fefc515a99cd33b3de36443.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;217&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;(a)&lt;/strong&gt; A polycrystalline material with differently oriented FCC crystallites.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;(b)&lt;/strong&gt; Using the individual radial distributions of the particles as structural descriptor, the algorithm identifies the crystalline domains (blue, $k = 0$) and the grain boundaries (red, $k = 1$).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;(c)&lt;/strong&gt; The radial distribution functions restricted to these two clusters display a marked difference, with higher peaks for the crystals. The 3D visualization was performed with &lt;a href=&#34;https://www.ovito.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;OVITO&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
     
     <item>
       <title>partycls</title>

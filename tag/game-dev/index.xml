@@ -5,12 +5,56 @@
     <link>https://jorisparet.github.io/tag/game-dev/</link>
       <atom:link href="https://jorisparet.github.io/tag/game-dev/index.xml" rel="self" type="application/rss+xml" />
     <description>Game Dev</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Fri, 28 Jan 2022 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sat, 11 Jun 2022 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://jorisparet.github.io/media/icon_huf5b7e9305d8ca00c36bcf7194f7e4936_69678_512x512_fill_lanczos_center_3.png</url>
       <title>Game Dev</title>
       <link>https://jorisparet.github.io/tag/game-dev/</link>
     </image>
+    
+    <item>
+      <title>Synth Road is now available on Android</title>
+      <link>https://jorisparet.github.io/post/2022-06-11_synth-road-first-release/</link>
+      <pubDate>Sat, 11 Jun 2022 00:00:00 +0000</pubDate>
+      <guid>https://jorisparet.github.io/post/2022-06-11_synth-road-first-release/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Synth Road&lt;/strong&gt; is an arcade mobile game with synthwave vibes created using the &lt;a href=&#34;https://unity.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Unity&lt;/a&gt; game engine. The goal is to go as far as possible on the road by avoiding the obstacles, and by using powers to help you do so. You can then publish your highscores on the leaderboard to compare your results with other players. The game is free to download on &lt;a href=&#34;https://play.google.com/store/apps/details?id=com.JorisParet.SynthRoad&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Google Play&lt;/a&gt;, and it contains a single &lt;strong&gt;optional&lt;/strong&gt; advertisement whose generated money (if any) will be given to humanitarian NGOs.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;screenshot&#34; srcset=&#34;
+               /post/2022-06-11_synth-road-first-release/screenshot_hu6d331ad27abbe38bd918b5eef0c16235_87861_db9f84950c1efad89660bc9d7b150d17.webp 400w,
+               /post/2022-06-11_synth-road-first-release/screenshot_hu6d331ad27abbe38bd918b5eef0c16235_87861_4013f908aaeacf7461da3669d5a07f56.webp 760w,
+               /post/2022-06-11_synth-road-first-release/screenshot_hu6d331ad27abbe38bd918b5eef0c16235_87861_1200x1200_fit_q100_h2_lanczos.webp 1200w&#34;
+               src=&#34;https://jorisparet.github.io/post/2022-06-11_synth-road-first-release/screenshot_hu6d331ad27abbe38bd918b5eef0c16235_87861_db9f84950c1efad89660bc9d7b150d17.webp&#34;
+               width=&#34;270&#34;
+               height=&#34;540&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;This game is the logical consequence of two things:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;My obsession for the indie game &lt;a href=&#34;https://www.mobiusdigitalgames.com/outer-wilds.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Outer Wilds&lt;/a&gt;, created by the geniuses at &lt;a href=&#34;https://www.mobiusdigitalgames.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Mobius Digital Games&lt;/a&gt;, which was also created with Unity.&lt;/li&gt;
+&lt;li&gt;The amazing YouTube channel of &lt;a href=&#34;https://www.youtube.com/c/SebastianLague&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Sebastian Lague&lt;/a&gt;, where he creates various Unity projects and explains them in the most pedagogical, poetic and relaxing way.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;These two things motivated me to experiment with Unity, and after a few weeks I wanted to prove to myself that I could create an entire project on my own from scratch. The most common mistake among amateur game developers is to directly start with unreasonably big projects, so I tried to keep it simple and came up with this mobile game. This was an opportunity to have a first look at various aspects of game design (gameplay, VFX, SFX, UI, etc.) and to learn more about the countless features of Unity. The game mechanics and visuals are simple, but for a first try I am pretty satisfied with the result, and I hope that I will have more time in the future for more elaborate projects.&lt;/p&gt;
+&lt;p&gt;The code and all the game assets are available on the &lt;a href=&#34;https://github.com/jorisparet/synth-road&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GitHub page&lt;/a&gt; of the project.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Synth Road</title>
