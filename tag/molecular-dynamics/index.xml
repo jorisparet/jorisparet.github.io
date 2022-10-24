@@ -5,12 +5,28 @@
     <link>https://jorisparet.github.io/tag/molecular-dynamics/</link>
       <atom:link href="https://jorisparet.github.io/tag/molecular-dynamics/index.xml" rel="self" type="application/rss+xml" />
     <description>Molecular Dynamics</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 08 Nov 2021 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 24 Oct 2022 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://jorisparet.github.io/media/icon_huf5b7e9305d8ca00c36bcf7194f7e4936_69678_512x512_fill_lanczos_center_3.png</url>
       <title>Molecular Dynamics</title>
       <link>https://jorisparet.github.io/tag/molecular-dynamics/</link>
     </image>
+    
+    <item>
+      <title>New major release of partycls (2.0.0)</title>
+      <link>https://jorisparet.github.io/post/2022-10-24_partycls-2-0-0/</link>
+      <pubDate>Mon, 24 Oct 2022 00:00:00 +0000</pubDate>
+      <guid>https://jorisparet.github.io/post/2022-10-24_partycls-2-0-0/</guid>
+      <description>&lt;p&gt;A new major release of &lt;strong&gt;partycls&lt;/strong&gt; (v2.0.0) is now available on &lt;a href=&#34;https://github.com/jorisparet/partycls&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GitHub&lt;/a&gt; and &lt;a href=&#34;https://pypi.org/project/partycls/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;PyPI&lt;/a&gt;. The new &lt;a href=&#34;https://www.jorisparet.com/partycls&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;homepage&lt;/a&gt; also features new tutorials and a more consistent documentation, with a more detailed API presentation and cross-references between the different pages.&lt;/p&gt;
+&lt;p&gt;The most important changes include:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;A variety of new structural descriptors and features (&lt;em&gt;e.g.&lt;/em&gt; Voronoi tessellation).&lt;/li&gt;
+&lt;li&gt;A global optimization for most computations.&lt;/li&gt;
+&lt;li&gt;Several bug fixes.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;See the &lt;a href=&#34;https://www.jorisparet.com/partycls/changelog.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;changelog&lt;/a&gt; for more details on this new version.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>“partycls: A Python package for structural clustering” - The Journal of Open Source Software</title>
@@ -97,9 +113,9 @@
            loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;partycls&lt;/strong&gt; is a Python package for cluster analysis of systems of interacting particles. By grouping particles that share similar structural or dynamical properties, partycls enables rapid and unsupervised exploration of the system&amp;rsquo;s relevant features. It provides descriptors suitable for applications in condensed matter physics, such as structural analysis of disordered or partially ordered materials, and integrates the necessary tools of unsupervised learning into a streamlined workflow.&lt;/p&gt;
+&lt;h2 id=&#34;homepage&#34;&gt;Homepage&lt;/h2&gt;
+&lt;p&gt;For more details and tutorials, visit the &lt;a href=&#34;https://www.jorisparet.com/partycls&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;homepage&lt;/a&gt; of the project.&lt;/p&gt;
 &lt;h2 id=&#34;quick-start&#34;&gt;Quick start&lt;/h2&gt;
-&lt;hr&gt;
 &lt;p&gt;This quick example shows how to use partycls to identify grain boundaries in a polycrystalline system. The system configuration is stored in a &lt;a href=&#34;https://en.wikipedia.org/wiki/XYZ_file_format&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;XYZ&lt;/a&gt; trajectory file with a single frame. We use the local distribution of bond angles around each particle as a structural descriptor and perform a clustering using the &lt;a href=&#34;https://en.wikipedia.org/wiki/K-means_clustering&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;K-Means&lt;/a&gt; algorithm.&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kn&#34;&gt;from&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;partycls&lt;/span&gt; &lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;Trajectory&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;Workflow&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
@@ -128,10 +144,10 @@
     &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://raw.githubusercontent.com/jorisparet/partycls/master/data/snapshots/grains_labels.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
-&lt;p&gt;The results are also written to a set of files including a labeled trajectory file and additional information on the clustering results. The whole workflow can be tuned and customized, check out the &lt;a href=&#34;https://jorisparet.github.io/partycls/docs/tutorial/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;tutorials&lt;/a&gt; to see how and for further examples.&lt;/p&gt;
+&lt;p&gt;The results are also written to a set of files including a labeled trajectory file and additional information on the clustering results. The whole workflow can be tuned and customized, check out the &lt;a href=&#34;https://www.jorisparet.com/partycls/tutorials&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;tutorials&lt;/a&gt; to see how and for further examples.&lt;/p&gt;
 &lt;p&gt;Thanks to a flexible system of filters, partycls makes it easy to restrict the analysis to a given subset of particles based on arbitrary particle properties. Say we have a binary mixture composed of particles with types A and B, and we are only interested in analyzing the bond angles of B particles in a vertical slice:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kn&#34;&gt;from&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;partycls&lt;/span&gt; &lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;Trajectory&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kn&#34;&gt;from&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;partycls.descriptor&lt;/span&gt; &lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;BondAngleDescriptor&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kn&#34;&gt;from&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;partycls.descriptors&lt;/span&gt; &lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;BondAngleDescriptor&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;traj&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;Trajectory&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;trajectory.xyz&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;D&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;BondAngleDescriptor&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;traj&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
@@ -148,61 +164,77 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;clustering&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;KMeans&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;n_clusters&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;3&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;clustering&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;fit&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;D&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;features&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;Cluster membership of the particles&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;clustering&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;labels&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;features&#34;&gt;Features&lt;/h2&gt;
-&lt;hr&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;main-features&#34;&gt;Main features&lt;/h2&gt;
+&lt;h3 id=&#34;trajectory-formats&#34;&gt;Trajectory formats&lt;/h3&gt;
+&lt;p&gt;partycls accepts several trajectory formats (including custom ones) either through its built-in trajectory reader or via third-party packages, such as &lt;a href=&#34;www.mdtraj.org&#34;&gt;MDTraj&lt;/a&gt; and &lt;a href=&#34;https://framagit.org/atooms/atooms&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;atooms&lt;/a&gt;. The code is currently optimized for small and medium system sizes (of order 10⁴ particles). Multiple trajectory frames can be analyzed to extend the structural dataset.&lt;/p&gt;
+&lt;h3 id=&#34;structural-descriptors&#34;&gt;Structural descriptors&lt;/h3&gt;
+&lt;p&gt;partycls implements various structural descriptors:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;partycls accepts several trajectory formats (including custom ones) either through its built-in trajectory reader or via third-party packages, such as &lt;a href=&#34;www.mdtraj.org&#34;&gt;MDTraj&lt;/a&gt; and &lt;a href=&#34;https://framagit.org/atooms/atooms&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;atooms&lt;/a&gt;. The code is currently optimized for small and medium system sizes (of order 10⁴ particles). Multiple trajectory frames can be analyzed to extend the structural dataset.&lt;/li&gt;
-&lt;li&gt;partycls implements various structural descriptors: radial distribution, bond-angle distribution, standard bond order parameters (see the &lt;a href=&#34;https://journals.aps.org/prb/abstract/10.1103/PhysRevB.28.784&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;original paper&lt;/a&gt;), and locally averaged bond order parameters (see the &lt;a href=&#34;https://aip.scitation.org/doi/10.1063/1.2977970&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;original paper&lt;/a&gt;). On top of these native descriptors, partycls supports additional structural descriptors via &lt;a href=&#34;https://singroup.github.io/dscribe&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;DScribe&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;partycls performs feature scaling, dimensionality reduction and cluster analysis using the &lt;a href=&#34;https://scikit-learn.org&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;scikit-learn&lt;/a&gt; package and additional built-in algorithms.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.jorisparet.com/partycls/tutorials/descriptors/gr.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Radial descriptor&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.jorisparet.com/partycls/tutorials/descriptors/tetra.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Tetrahedral descriptor&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.jorisparet.com/partycls/tutorials/descriptors/ba.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Bond-angle descriptor&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.jorisparet.com/partycls/tutorials/descriptors/sba.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Smoothed bond-angle descriptor&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.jorisparet.com/partycls/tutorials/descriptors/bo.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Bond-orientational descriptor&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.jorisparet.com/partycls/tutorials/descriptors/sbo.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Smoothed bond-orientational descriptor&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.jorisparet.com/partycls/tutorials/descriptors/labo.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Locally averaged bond-orientational descriptor&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.jorisparet.com/partycls/tutorials/descriptors/rbo.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Radial bond-orientational descriptor&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.jorisparet.com/partycls/tutorials/descriptors/compact.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Compactness descriptor&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.jorisparet.com/partycls/tutorials/descriptors/coord.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Coordination descriptor&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;requirements&#34;&gt;Requirements&lt;/h2&gt;
-&lt;hr&gt;
+&lt;h3 id=&#34;machine-learning&#34;&gt;Machine learning&lt;/h3&gt;
+&lt;p&gt;partycls performs feature scaling, dimensionality reduction and cluster analysis using the &lt;a href=&#34;https://scikit-learn.org&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;scikit-learn&lt;/a&gt; package and additional built-in algorithms.&lt;/p&gt;
+&lt;h2 id=&#34;dependencies&#34;&gt;Dependencies&lt;/h2&gt;
+&lt;p&gt;partycls relies on several external packages, most of which only provide additional features and are not necessarily required.&lt;/p&gt;
+&lt;h3 id=&#34;required&#34;&gt;Required&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Fortran compiler&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://pypi.org/project/numpy/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;numpy&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Fortran compiler (&lt;em&gt;e.g.&lt;/em&gt; &lt;a href=&#34;https://gcc.gnu.org/wiki/GFortran&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;gfortran&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://pypi.org/project/numpy/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;NumPy&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://scikit-learn.org&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;scikit-learn&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;[optional] &lt;a href=&#34;https://www.mdtraj.org&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;mdtraj&lt;/a&gt; (additional trajectory formats)&lt;/li&gt;
-&lt;li&gt;[optional] &lt;a href=&#34;https://framagit.org/atooms/atooms&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;atooms&lt;/a&gt; &amp;lt; 3.0.0 (additional trajectory formats)&lt;/li&gt;
-&lt;li&gt;[optional] &lt;a href=&#34;https://singroup.github.io/dscribe&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;dscribe&lt;/a&gt; (additional descriptors)&lt;/li&gt;
-&lt;li&gt;[optional] &lt;a href=&#34;https://matplotlib.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;matplotlib&lt;/a&gt; (visualization)&lt;/li&gt;
-&lt;li&gt;[optional] &lt;a href=&#34;https://ovito.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ovito&lt;/a&gt; (visualization)&lt;/li&gt;
-&lt;li&gt;[optional] &lt;a href=&#34;https://github.com/avirshup/py3dmol&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;py3Dmol&lt;/a&gt; (interactive 3D visualization)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;optional&#34;&gt;Optional&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.mdtraj.org&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;MDTraj&lt;/a&gt; (additional trajectory formats)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://framagit.org/atooms/atooms&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;atooms&lt;/a&gt; (additional trajectory formats)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://singroup.github.io/dscribe&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;DScribe&lt;/a&gt; (additional descriptors)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://matplotlib.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Matplotlib&lt;/a&gt; (visualization)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://ovito.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;OVITO&lt;/a&gt; &amp;lt; 3.7.0 (visualization)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/avirshup/py3dmol&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Py3DMol&lt;/a&gt; (interactive 3D visualization)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/joe-jordan/pyvoro&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;pyvoro&lt;/a&gt; or its &lt;a href=&#34;https://framagit.org/coslo/pyvoro&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;memory-optimized fork&lt;/a&gt; for large systems (Voronoi neighbors and tessellation)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://tqdm.github.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;tqdm&lt;/a&gt; (progress bars)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;documentation&#34;&gt;Documentation&lt;/h2&gt;
-&lt;hr&gt;
-&lt;ul&gt;
-&lt;li&gt;See the &lt;a href=&#34;https://jorisparet.github.io/partycls/docs/tutorial/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;tutorials&lt;/a&gt; (Jupyter notebooks) for a step-by-step introduction to the main features of partycls and some of its applications.&lt;/li&gt;
-&lt;li&gt;Full &lt;a href=&#34;https://jorisparet.github.io/partycls/docs/API/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;API documentation&lt;/a&gt;.&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;Check the &lt;a href=&#34;https://www.jorisparet.com/partycls/tutorials&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;tutorials&lt;/a&gt; to see various examples and detailed instructions on how to run the code, as well as an in-depth presentation of the built-in structural descriptors.&lt;/p&gt;
+&lt;p&gt;For a more detailed documentation, you can check the &lt;a href=&#34;https://www.jorisparet.com/partycls/api&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;API&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;installation&#34;&gt;Installation&lt;/h2&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;1.&lt;/strong&gt; From &lt;a href=&#34;https://pypi.org/project/partycls/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;pypi&lt;/a&gt;:&lt;/p&gt;
+&lt;h3 id=&#34;from-pypi&#34;&gt;From PyPI&lt;/h3&gt;
+&lt;p&gt;The latest stable release is available on &lt;a href=&#34;https://pypi.org/project/partycls/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;PyPI&lt;/a&gt;. Install it with &lt;code&gt;pip&lt;/code&gt;:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;pip install partycls
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;2.&lt;/strong&gt; From the &lt;a href=&#34;https://github.com/jorisparet/partycls&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;code repository&lt;/a&gt;:&lt;/p&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;from-source&#34;&gt;From source&lt;/h3&gt;
+&lt;p&gt;To install the latest development version from source, clone the source code from the official &lt;a href=&#34;https://github.com/jorisparet/partycls&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GitHub repository&lt;/a&gt; and install it with:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git clone https://github.com/jorisparet/partycls.git
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;cd&lt;/span&gt; partycls
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;make install
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Run the tests using:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;make &lt;span class=&#34;nb&#34;&gt;test&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;or manually compile the Fortran source and run the tests:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;cd&lt;/span&gt; partycls/descriptor/
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;or manually compile the Fortran sources and run the tests:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;cd&lt;/span&gt; partycls/
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;f2py -c -m neighbors_wrap neighbors.f90
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;cd&lt;/span&gt; descriptor/
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;f2py -c -m realspace_wrap realspace.f90
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;cd&lt;/span&gt; ../../
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;pytest tests/
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;support-and-contribution&#34;&gt;Support and contribution&lt;/h2&gt;
-&lt;hr&gt;
 &lt;p&gt;If you wish to contribute or report an issue, feel free to &lt;a href=&#34;mailto:joris.paret@gmail.com&#34;&gt;contact us&lt;/a&gt; or to use the &lt;a href=&#34;https://github.com/jorisparet/partycls/issues&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;issue tracker&lt;/a&gt; and &lt;a href=&#34;https://github.com/jorisparet/partycls/pulls&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;pull requests&lt;/a&gt; from the &lt;a href=&#34;https://github.com/jorisparet/partycls&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;code repository&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;We largely follow the &lt;a href=&#34;https://guides.github.com/introduction/flow/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GitHub flow&lt;/a&gt; to integrate community contributions. In essence:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;fork the repository ;&lt;/li&gt;
-&lt;li&gt;create a feature branch from &lt;em&gt;master&lt;/em&gt; ;&lt;/li&gt;
-&lt;li&gt;unleash your creativity ;&lt;/li&gt;
-&lt;li&gt;run the tests ;&lt;/li&gt;
-&lt;li&gt;open a pull request ;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;ol&gt;
+&lt;li&gt;Fork the repository.&lt;/li&gt;
+&lt;li&gt;Create a feature branch from &lt;code&gt;master&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Unleash your creativity.&lt;/li&gt;
+&lt;li&gt;Run the tests.&lt;/li&gt;
+&lt;li&gt;Open a pull request.&lt;/li&gt;
+&lt;/ol&gt;
 &lt;p&gt;We also welcome contributions from other platforms, such as GitLab instances. Just let us know where to find your feature branch.&lt;/p&gt;
 &lt;h2 id=&#34;citing-partycls&#34;&gt;Citing partycls&lt;/h2&gt;
-&lt;hr&gt;
 &lt;p&gt;If you use partycls in a scientific publication, please consider citing the following article:&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;&lt;a href=&#34;https://joss.theoj.org/papers/10.21105/joss.03723&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;partycls: A Python package for structural clustering&lt;/a&gt;. Paret et al., (2021). Journal of Open Source Software, 6(67), 3723&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;Bibtex entry:&lt;/p&gt;
@@ -219,8 +251,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;nx&#34;&gt;journal&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;Journal&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;of&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;Open&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;Source&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;Software&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;authors&#34;&gt;Authors&lt;/h2&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;a href=&#34;https://jorisparet.github.io&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Joris Paret&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.jorisparet.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Joris Paret&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://www.units.it/daniele.coslovich/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Daniele Coslovich&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>

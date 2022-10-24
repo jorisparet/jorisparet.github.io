@@ -13,6 +13,22 @@
     </image>
     
     <item>
+      <title>New major release of partycls (2.0.0)</title>
+      <link>https://jorisparet.github.io/post/2022-10-24_partycls-2-0-0/</link>
+      <pubDate>Mon, 24 Oct 2022 00:00:00 +0000</pubDate>
+      <guid>https://jorisparet.github.io/post/2022-10-24_partycls-2-0-0/</guid>
+      <description>&lt;p&gt;A new major release of &lt;strong&gt;partycls&lt;/strong&gt; (v2.0.0) is now available on &lt;a href=&#34;https://github.com/jorisparet/partycls&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GitHub&lt;/a&gt; and &lt;a href=&#34;https://pypi.org/project/partycls/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;PyPI&lt;/a&gt;. The new &lt;a href=&#34;https://www.jorisparet.com/partycls&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;homepage&lt;/a&gt; also features new tutorials and a more consistent documentation, with a more detailed API presentation and cross-references between the different pages.&lt;/p&gt;
+&lt;p&gt;The most important changes include:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;A variety of new structural descriptors and features (&lt;em&gt;e.g.&lt;/em&gt; Voronoi tessellation).&lt;/li&gt;
+&lt;li&gt;A global optimization for most computations.&lt;/li&gt;
+&lt;li&gt;Several bug fixes.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;See the &lt;a href=&#34;https://www.jorisparet.com/partycls/changelog.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;changelog&lt;/a&gt; for more details on this new version.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>First official release of hamoco</title>
       <link>https://jorisparet.github.io/post/2022-09-07_hamoco-first-release/</link>
       <pubDate>Wed, 07 Sep 2022 00:00:00 +0000</pubDate>
