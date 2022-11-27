@@ -33,6 +33,24 @@
     </item>
     
     <item>
+      <title>“Dimensionality reduction of local structure in glassy binary mixtures” - The Journal of Chemical Physics</title>
+      <link>https://jorisparet.github.io/post/2022-11-22_jcp/</link>
+      <pubDate>Mon, 24 Oct 2022 00:00:00 +0000</pubDate>
+      <guid>https://jorisparet.github.io/post/2022-11-22_jcp/</guid>
+      <description>&lt;h1 id=&#34;authors&#34;&gt;Authors&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Daniele Coslovich&lt;/li&gt;
+&lt;li&gt;Robert L. Jack&lt;/li&gt;
+&lt;li&gt;Joris Paret&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;abstract&#34;&gt;Abstract&lt;/h1&gt;
+&lt;p&gt;We consider unsupervised learning methods for characterizing the disordered microscopic structure of supercooled liquids and glasses. Specifically, we perform dimensionality reduction of smooth structural descriptors that describe radial and bond-orientational correlations and assess the ability of the method to grasp the essential structural features of glassy binary mixtures. In several cases, a few collective variables account for the bulk of the structural fluctuations within the first coordination shell and also display a clear connection with the fluctuations of particle mobility. Fine-grained descriptors that characterize the radial dependence of bond-orientational order better capture the structural fluctuations relevant for particle mobility but are also more difficult to parameterize and to interpret. We also find that principal component analysis of bond-orientational order parameters provides identical results to neural network autoencoders while having the advantage of being easily interpretable. Overall, our results indicate that glassy binary mixtures have a broad spectrum of structural features. In the temperature range we investigate, some mixtures display well-defined locally favored structures, which are reflected in bimodal distributions of the structural variables identified by dimensionality reduction.&lt;/p&gt;
+&lt;h1 id=&#34;article-and-data-availability&#34;&gt;Article and data availability&lt;/h1&gt;
+&lt;p&gt;This paper is published &lt;a href=&#34;https://doi.org/10.1063/5.0128265&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The Journal of Chemical Physics&lt;/a&gt; and is also available on &lt;a href=&#34;https://arxiv.org/abs/2211.01904&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;arXiv&lt;/a&gt;. The computation of descriptors and most of the dimensionality reduction analysis were performed using the &lt;a href=&#34;https://www.jorisparet.com/partycls&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;partycls&lt;/a&gt; package. Data analysis has been carried out using a reproducible workflow, deposited in the Zenodo &lt;a href=&#34;https://doi.org/10.5281/zenodo.7108317&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;public repository&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>New major release of partycls (2.0.0)</title>
       <link>https://jorisparet.github.io/post/2022-10-24_partycls-2-0-0/</link>
       <pubDate>Mon, 24 Oct 2022 00:00:00 +0000</pubDate>
