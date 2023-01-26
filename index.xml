@@ -33,6 +33,40 @@
     </item>
     
     <item>
+      <title>submv</title>
+      <link>https://jorisparet.github.io/project/submv/</link>
+      <pubDate>Sat, 07 Jan 2023 00:00:00 +0000</pubDate>
+      <guid>https://jorisparet.github.io/project/submv/</guid>
+      <description>&lt;h1 id=&#34;submv&#34;&gt;submv&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;submv&lt;/strong&gt; allows you to shift a subtitle file by a given amount to synchronize it to a video stream using a simple command line tool.&lt;/p&gt;
+&lt;h2 id=&#34;quickstart&#34;&gt;Quickstart&lt;/h2&gt;
+&lt;p&gt;In a console, simply type&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;submv path/to/subtitles.srt -1.5
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;to shift the file &lt;code&gt;subtitles.srt&lt;/code&gt; by -1.5s. By default, it will &lt;strong&gt;overwrite&lt;/strong&gt; the original file.&lt;/p&gt;
+&lt;p&gt;More options:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The shifted subtitles can be written to a new file by using the &lt;code&gt;--output&lt;/code&gt; flag (or &lt;code&gt;-o&lt;/code&gt; for short). Example: &lt;code&gt;submv file.srt 2.1 --output new_file.srt&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;The default format is &lt;a href=&#34;https://en.wikipedia.org/wiki/SubRip&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;SubRip&lt;/a&gt; (&lt;code&gt;*.srt&lt;/code&gt; files). Other formats can be read using the &lt;code&gt;--format&lt;/code&gt; flag (or &lt;code&gt;-f&lt;/code&gt; for short). Example: &lt;code&gt;submv file.sub --format sub&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;For certain formats such as &lt;a href=&#34;https://en.wikipedia.org/wiki/MicroDVD&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;MicroDVD&lt;/a&gt; (&lt;code&gt;*.sub&lt;/code&gt; files), the timecodes depend on the video framerate. To account for this, the correct framerate must be specified with the &lt;code&gt;--framerate&lt;/code&gt; flag (or &lt;code&gt;-r&lt;/code&gt; for short). Example: &lt;code&gt;submv file.sub --framerate 30&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;installation&#34;&gt;Installation&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;1.&lt;/strong&gt; From &lt;a href=&#34;https://pypi.org/project/submv/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;PyPI&lt;/a&gt;:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;pip install submv
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;2.&lt;/strong&gt; From the &lt;a href=&#34;https://github.com/jorisparet/submv&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;code repository&lt;/a&gt;:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git clone https://github.com/jorisparet/submv
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;cd submv
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;pip install .
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;linux&#34;&gt;Linux&lt;/h4&gt;
+&lt;p&gt;The default folder should be under &lt;code&gt;/home/&amp;lt;user&amp;gt;/.local/bin/&lt;/code&gt;. Make sure this location (or the correct one, if different) is included in your &lt;code&gt;$PATH&lt;/code&gt; environment variable to be able to run the scripts from the console. If not, type the following command &lt;code&gt;export PATH=$PATH:/path/to/submv/script/&lt;/code&gt; in the console or add it your &lt;code&gt;.bashrc&lt;/code&gt; file.&lt;/p&gt;
+&lt;h4 id=&#34;windows&#34;&gt;Windows&lt;/h4&gt;
+&lt;p&gt;The default folder should be under &lt;code&gt;C:\Users\&amp;lt;user&amp;gt;\AppData\Local\Programs\Python\&amp;lt;python_version&amp;gt;\Scripts\&lt;/code&gt;. Make sure this location (or the correct one, if different) is included in your &lt;code&gt;$PATH&lt;/code&gt; environment variable to be able to run the scripts from the console. If not, type the following command &lt;code&gt;set PATH=%PATH%;C:\path\to\submv\script\&lt;/code&gt; in the console, or select &lt;code&gt;Edit the system environment variables&lt;/code&gt; in the search bar, click &lt;code&gt;Environment Variables…&lt;/code&gt;, click &lt;code&gt;PATH&lt;/code&gt;, click &lt;code&gt;Edit...&lt;/code&gt; and add the correct path to the scripts.&lt;/p&gt;
+&lt;h2 id=&#34;author&#34;&gt;Author&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.jorisparet.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Joris Paret&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>“Dimensionality reduction of local structure in glassy binary mixtures” - The Journal of Chemical Physics</title>
       <link>https://jorisparet.github.io/post/2022-11-22_jcp/</link>
       <pubDate>Mon, 24 Oct 2022 00:00:00 +0000</pubDate>
