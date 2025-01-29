@@ -33,6 +33,46 @@
     </item>
     
     <item>
+      <title>Contribution to the 33rd Symposium on Fusion Technology</title>
+      <link>https://jorisparet.github.io/post/2024-09-22_soft/</link>
+      <pubDate>Sun, 22 Sep 2024 00:00:00 +0000</pubDate>
+      <guid>https://jorisparet.github.io/post/2024-09-22_soft/</guid>
+      <description>&lt;h1 id=&#34;soft-2024---preliminary-machine-learning-based-calibration-strategy-for-the-iter-tokamak-systems-monitor&#34;&gt;SOFT 2024 - Preliminary machine learning-based calibration strategy for the ITER Tokamak Systems Monitor&lt;/h1&gt;
+&lt;p&gt;From &lt;strong&gt;September 22 to 27, 2024&lt;/strong&gt;, I had the opportunity to attend the &lt;strong&gt;33rd Symposium on Fusion Technology (SOFT 2024)&lt;/strong&gt; at &lt;strong&gt;Dublin City University, Ireland&lt;/strong&gt;. This premier event brought together researchers, engineers, and industry experts from around the world to discuss the latest advancements in fusion energy. The conference covered a wide range of topics, from reactor technology and materials science to plasma diagnostics and control systems, fostering valuable exchanges within the international fusion community.&lt;/p&gt;
+&lt;p&gt;As part of my research at &lt;a href=&#34;https://www.iter.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ITER&lt;/a&gt;, I presented a scientific poster on a &lt;strong&gt;machine learning-based calibration strategy for the ITER Tokamak Systems Monitor (TSM)&lt;/strong&gt;, a software framework that aggregates data from multiple sensors installed across ITER to assess the machine&amp;rsquo;s health. This work focuses on improving the accuracy and reliability of numerical models that monitor the ITER tokamak&amp;rsquo;s structural dynamics. This work explores the use of sequential model-based optimization (SMBO) for the calibration of finite-element models. The goal is to refine structural models of the tokamak using a limited dataset, addressing the challenge of &lt;strong&gt;calibrating complex engineering systems under restrictive conditions&lt;/strong&gt;—a common limitation in fusion experiments due to the harsh operational environment and limited sensor accessibility.&lt;/p&gt;
+&lt;p&gt;See the poster below or download it as a PDF &lt;a href=&#34;https://jorisparet.github.io/uploads/SOFT_2024_poster.pdf&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;poster&#34; srcset=&#34;
+               /post/2024-09-22_soft/poster_hu2b9eaf6ec1672bcb03e93854b845f20e_4291946_71852c888db2027dc7c73db723bc93aa.webp 400w,
+               /post/2024-09-22_soft/poster_hu2b9eaf6ec1672bcb03e93854b845f20e_4291946_c56e77fd0f3255097e4a45bac7ce2ad1.webp 760w,
+               /post/2024-09-22_soft/poster_hu2b9eaf6ec1672bcb03e93854b845f20e_4291946_1200x1200_fit_q100_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://jorisparet.github.io/post/2024-09-22_soft/poster_hu2b9eaf6ec1672bcb03e93854b845f20e_4291946_71852c888db2027dc7c73db723bc93aa.webp&#34;
+               width=&#34;538&#34;
+               height=&#34;760&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>submv</title>
       <link>https://jorisparet.github.io/project/submv/</link>
       <pubDate>Sat, 07 Jan 2023 00:00:00 +0000</pubDate>
