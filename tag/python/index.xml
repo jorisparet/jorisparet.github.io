@@ -5,12 +5,54 @@
     <link>https://jorisparet.github.io/tag/python/</link>
       <atom:link href="https://jorisparet.github.io/tag/python/index.xml" rel="self" type="application/rss+xml" />
     <description>Python</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 22 Sep 2024 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Thu, 03 Jul 2025 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://jorisparet.github.io/media/icon_huf5b7e9305d8ca00c36bcf7194f7e4936_69678_512x512_fill_lanczos_center_3.png</url>
       <title>Python</title>
       <link>https://jorisparet.github.io/tag/python/</link>
     </image>
+    
+    <item>
+      <title>Contribution to the 14th IEEE Symposium on Fusion Engineering</title>
+      <link>https://jorisparet.github.io/post/2025-07-03_sofe/</link>
+      <pubDate>Thu, 03 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>https://jorisparet.github.io/post/2025-07-03_sofe/</guid>
+      <description>&lt;h1 id=&#34;sofe-2025--machine-learning-based-anomaly-detection-for-iters-tokamak-systems-monitor-a-gyrotron-case-study&#34;&gt;SOFE 2025 – Machine learning-based anomaly detection for ITER&amp;rsquo;s Tokamak Systems Monitor: a gyrotron case study&lt;/h1&gt;
+&lt;p&gt;From June 23 to 26, 2025, I attended the &lt;strong&gt;14th IEEE Symposium on Fusion Engineering (SOFE 2025)&lt;/strong&gt;, hosted by the &lt;a href=&#34;https://www.psfc.mit.edu/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Plasma Science and Fusion Center&lt;/a&gt; (PSFC) at MIT in Boston, USA. This major event gathered 700 participants and featured a wide array of talks and posters covering all aspects of fusion engineering. There was also a strong presence of private fusion companies, including &lt;a href=&#34;https://cfs.energy/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Commonwealth Fusion Systems&lt;/a&gt;, &lt;a href=&#34;https://www.proximafusion.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Proxima Fusion&lt;/a&gt;, and many more, reflecting the growing industrial momentum around fusion energy.&lt;/p&gt;
+&lt;p&gt;I presented a poster titled &lt;strong&gt;&amp;ldquo;Machine learning-based anomaly detection for ITER&amp;rsquo;s Tokamak Systems Monitor: a gyrotron case study&amp;rdquo;&lt;/strong&gt;. The work focuses on applying unsupervised learning techniques to detect anomalies in gyrotron pulses, using data from the European industrial prototype for ITER. The proposed pipeline extracts statistical features from each pulse, reduces dimensionality via PCA, and applies DBSCAN clustering to identify outliers in an entirely data-driven way. It enables the detection of subtle irregularities without requiring labeled examples or predefined failure modes.&lt;/p&gt;
+&lt;p&gt;This method is designed to integrate with ITER&amp;rsquo;s &lt;strong&gt;Tokamak Systems Monitor (TSM)&lt;/strong&gt; software, which will support operators by providing early warnings and health assessments across multiple subsystems. While demonstrated on intershot gyrotron data, the approach is generalizable and can be adapted to other systems and subsystems covered by the TSM.&lt;/p&gt;
+&lt;p&gt;A conference proceedings paper associated with this contribution will be published in &lt;a href=&#34;https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=27&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;IEEE Transactions on Plasma Science&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;See the poster below or download it as a PDF &lt;a href=&#34;https://jorisparet.github.io/uploads/SOFE_2025_poster.pdf&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;poster&#34; srcset=&#34;
+               /post/2025-07-03_sofe/poster_hu99895b8a8c533d59b1b77d44cbad3cc4_1793520_ccf4b83247bbb77f3515574ffc9f1c6a.webp 400w,
+               /post/2025-07-03_sofe/poster_hu99895b8a8c533d59b1b77d44cbad3cc4_1793520_9da9aaacf63bf27cb47fe2273dcb1cd8.webp 760w,
+               /post/2025-07-03_sofe/poster_hu99895b8a8c533d59b1b77d44cbad3cc4_1793520_1200x1200_fit_q100_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://jorisparet.github.io/post/2025-07-03_sofe/poster_hu99895b8a8c533d59b1b77d44cbad3cc4_1793520_ccf4b83247bbb77f3515574ffc9f1c6a.webp&#34;
+               width=&#34;538&#34;
+               height=&#34;760&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Contribution to the 33rd Symposium on Fusion Technology</title>
